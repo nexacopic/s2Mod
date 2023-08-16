@@ -1,0 +1,299 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	geometry = "AdnQywABAAD////4////+AAACgcAAAV3AAABXwAAASAAAAeKAAAEowAAAAACAA=="
+	state = "AAAA/wAAAAL9AAAAAgAAAAAAAAEsAAAE9PwCAAAAAvsAAAAeAFQAbwBvAGwAUAByAG8AcABlAHIAdAB5AEIAYQByAQAAAEAAAAMeAAAATgD////7AAAAPABIAGEAbQBtAGUAcgBBAGMAdABpAHYAZQBNAGEAdABlAHIAaQBhAGwARABvAGMAawBXAGkAZABnAGUAdAEAAANiAAAB0gAAAEkA////AAAAAQAAAggAAAT0/AIAAAAC/AAAAEAAAALQAAABHwD////8AQAAAAL8AAAH+AAAAQQAAABBAP////wCAAAAAvwAAABAAAABTAAAAFIA////+gAAAAACAAAAAvsAAAAsAEEAdQB0AG8AVgBpAHMARwByAG8AdQBwAEQAbwBjAGsAVwBpAGQAZwBlAHQBAAAAAP////8AAABSAP////sAAAAsAEMAbwByAGQAbwBuAEUAZABpAHQAbwByAEQAbwBjAGsAVwBpAGQAZwBlAHQAAAAAAP////8AAAB0AP////sAAAA4AFMAZQBsAGUAYwB0AGkAbwBuAFMAZQB0AEUAZABpAHQAbwByAEQAbwBjAGsAVwBpAGQAZwBlAHQBAAABkAAAAYAAAAB0AP////wAAAkAAAABAAAAAK4A////+gAAAAIBAAAAA/sAAAAwAEMAbwBtAG0AYQBuAGQASABpAHMAdABvAHIAeQBEAG8AYwBrAFcAaQBkAGcAZQB0AAAAAAD/////AAAAPQD////7AAAAOABIAGEAbQBtAGUAcgBVAG4AZABvAEgAaQBzAHQAbwByAHkAeQBEAG8AYwBrAFcAaQBkAGcAZQB0AQAAAAD/////AAAAPQD////7AAAANABIAGEAbQBtAGUAcgBNAGEAcABPAHUAdABsAGkAbgBlAEQAbwBjAGsAVwBpAGQAZwBlAHQBAAAAAP////8AAACuAP////wAAAMUAAACIAAAAL8A////+gAAAAACAAAAAvsAAAA8AEgAYQBtAG0AZQByAE8AYgBqAGUAYwB0AFAAcgBvAHAAZQByAHQAeQBEAG8AYwBrAFcAaQBkAGcAZQB0AQAAAAD/////AAAAvwD////7AAAAKABIAGEAbQBtAGUAcgBQAGUAcgBmAEQAbwBjAGsAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABpoAAAT0AAAABAAAAAQAAAAIAAAACPwAAAACAAAAAAAAAAEAAAAcAEgAYQBtAG0AZQByAFQAbwBvAGwAcwBCAGEAcgMAAAAA/////wAAAAAAAAAAAAAAAgAAAAQAAAAmAEgAYQBtAG0AZQByAFMAZQBsAGUAYwB0AE0AbwBkAGUAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAACYASABhAG0AbQBlAHIARwBsAG8AYgBhAGwATQBvAGQAZQBCAGEAcgEAAAJp/////wAAAAAAAAAAAAAAJgBIAGEAbQBtAGUAcgBHAGwAbwBiAGEAbABNAG8AZABlAEIAYQByAQAABDj/////AAAAAAAAAAAAAAAcAE0AYQBwAFMAZQB0AHQAaQBuAGcAcwBCAGEAcgEAAAcU/////wAAAAAAAAAA"
+	floating = null
+	"Default Session" = 
+	{
+		geometry = "AdnQywABAAAAAAAAAAAAAAAABP8AAAQBAAAAAAAAAAAAAAT/AAAEAQAAAAAAAA=="
+	}
+	PaneDockWidgets = null
+	General = 
+	{
+		"Closed Correctly" = false
+		"Perforce Integration" = true
+		"Time Between Saves" = 15
+		"Max Autosave Space 2" = 2000
+		"Max Saves Per Map" = 5
+		"Load Autosave On Crash" = true
+		"Autosaves Enabled" = true
+		DefaultMaterialName = "materials/dev/reflectivity_30.vmat"
+		"Max Cameras" = 100
+		"Undo Levels 2" = 100
+		"Locking Textures" = true
+		"Scale Locking Textures" = false
+		"Component Locking Textures" = false
+		"Texture Alignment" = 1
+		"Load Default Positions" = true
+		"Independent Windows" = false
+		StretchArches = true
+		"Show Helpers" = true
+		"Show Game Objects Only" = false
+		"Visible Map Errors" = false
+		"Show Collision Models" = false
+		"Show Detail Objects" = true
+		"Show No Draw Brushes" = true
+		"Show Hidden Targets As Broken" = true
+		"Use Radius Culling" = false
+		"Save changes when building map" = false
+		"Render unlit maps as fullbright" = true
+		bShowSelectionModeChangeNotificationIcons = false
+		bShowToolChangeNotificationIcons = false
+		"Pause Game On Activate" = true
+		"Lasso select through" = false
+		"Select Backfacing" = false
+		bViewFocusStealing = true
+		"Preview MotionExtraction" = true
+		"Show Selection Set Counts" = true
+		SolidEntity = ""
+		PointEntity = ""
+		PathEntity = ""
+		ShowGrass = true
+		ViewportFontSize = 14
+	}
+	RecentFiles = null
+	NewFiles = null
+	BaseEditor = 
+	{
+		LastLoadDirectory = "maps"
+		LastSaveDirectory = "maps"
+	}
+	Configured = 
+	{
+		Configured = 2
+	}
+	"2D Views" = 
+	{
+		Crosshairs = false
+		GroupCarve = true
+		Scrollbars = true
+		RotateConstrain = false
+		"Draw Vertices" = true
+		"Draw Models" = true
+		WhiteOnBlack = true
+		GridHigh1024 = true
+		GridHigh10 = true
+		HideSmallGrid = true
+		Nudge = true
+		OrientPrimitives = false
+		AutoSelect = true
+		KeepCloneGroup = true
+		Gridhigh64 = false
+		Centeroncamera = false
+		Usegroupcolors = true
+		GridDots = false
+		"Default Grid" = 64
+		GridIntensity = 30
+		GridHighSpec = 8
+		ShowEntityNames = true
+		ShowMeshTiles = false
+	}
+	"3D Views" = 
+	{
+		Hardware = false
+		"Reverse Y" = false
+		BackPlane = 25000
+		NearPlane = 10.0
+		ShadowFarPlane = 5000.0
+		MouseWheelControlsFarPlane = false
+		ModelDistance = 400
+		DetailDistance = true
+		ForwardSpeedMax = 2000
+		TimeToMaxSpeed = 250
+		FilterTextures = true
+		ReverseSelection = false
+		PreviewModelFade = false
+		DrawProceduralGeometry = true
+		ZoomSensitivityMouseMove = 96
+		ZoomSensitivityMouseWheel = 2
+		CameraTargetDistance = 200
+		GridIntensity = 30
+		DrawSelectionOverlay = 1
+		DrawInstanceOverlay = 1
+		EnableSSAO = false
+		ShowMeshTiles = true
+		TonemapMode = 0
+		TonemapScaleOverride = 1.0
+		PostProcessingEnabled = false
+		ResolutionGate = "1280x720"
+		FOV = 90.0
+		SelectionOverlayAlpha = 96
+		ShowSelectionOutline = true
+		SelectionOutlineDepth2 = false
+		FogEnabled = false
+		HighlightDeprecated = true
+	}
+	"Indirect Light Preview" = 
+	{
+		EnableInteractiveRelighting = true
+		InteractiveRelightingMemoryBudget = 128
+		AutoUpdateEnvironmentMaps = 1
+	}
+	Custom2DColors = 
+	{
+		UseCustom = false
+		ScaleGrid0 = false
+		ScaleGrid = true
+		ScaleGridDot = true
+		ScaleGrid10 = true
+		ScaleGrid1024 = false
+		Grid0 = "0 100 100"
+		Grid = "255 255 255"
+		GridFractional = "200 200 200"
+		GridDot = "255 255 255"
+		Grid10 = "255 255 255"
+		Grid1024 = "100 50 5"
+		Background = "0 0 0"
+		LineColor = "255 255 255"
+		Entity = "220 30 220"
+		Selection = "255 255 0"
+		SelectionOverlay = "255 183 45"
+		SelectionAdd = "64 255 64"
+		SelectionRemove = "64 64 255"
+		SelectionWireframe = "80 200 255"
+		MeshHardEdges = "192 255 192"
+		MeshSoftEdges = "90 64 255"
+		NavMeshSolid = "40 80 240"
+		NavMeshWireframe = "120 200 255"
+		EdgeCutEdge = "64 255 64"
+		EdgeCutNewEdge = "255 255 0"
+		EdgeCutAlignedEdge = "255 183 45"
+		EdgeCutAddedVerts = "255 255 0"
+		EdgeCutNewVert = "255 255 0"
+		EdgeCutExistingVert = "64 255 64"
+		EdgeCutMidpoint = "255 183 45"
+		Vertex = "255 255 255"
+		HandleColor = "255 255 255"
+		BoxColor = "255 255 255"
+		ToolSelect = "255 255 0"
+		Morph = "255 0 0"
+		Path = "255 0 0"
+		ToolDrag = "255 255 0"
+		CollisionWireframe = "255 255 0"
+		CollisionWireframeDisabled = "220 30 220"
+		IrradVolumeInnerHull = "255 255 0"
+		IrradVolumeOuterHull = "0 255 255"
+		IrradVolumeVoxel = "0 255 0"
+	}
+	Tools = 
+	{
+		TranslateToolAlignToSurface = false
+		RotateToolUseRelativeMode = false
+		ScaleToolUseRelativeMode = true
+		PivotToolSnapToBBox = true
+		EdgeSelectionPreviewEdgeLength = true
+		ShowSelectionBounds = true
+		ShowSelectionDimensions = true
+		SelectContiguousNormalThreshold = 15.0
+	}
+	BuildMap = 
+	{
+		BuildMapWorld_2 = true
+		BuildOnlyBaseTileGometry = false
+		DebugVisGeometry = false
+		BuildMapEntities = true
+		BuildMapLighting = true
+		BuildBakedLighting = true
+		BuildUseMPI = true
+		BakedLightingQuality = 1
+		LightMapResolution = 4096
+		BuildMapPhysics = true
+		OptimizeCollisionV2 = false
+		OldCollisionPath = false
+		BuildMapPreSettlePhysics = true
+		BuildMapVis = true
+		BuildMapEnvMaps = true
+		BuildMapLOD = true
+		BuildMapGridNav = true
+		BuildMapNav = true
+		BuildSteamAudio = true
+		BuildMapUseTerrainItem = false
+		BuildMapLoadInEngine = true
+		BuildMapBringEngineToFront = true
+		BuildMapReportCrashes = true
+		BuildMapPresetSetting = 0
+		BuildMapDialogPosX = -1
+		BuildMapDialogPosY = -1
+	}
+	SelectionSet = 
+	{
+		CreateDlgAddToExisting = false
+		CreateDlgRemoveFromOthers = false
+		CreateDlgHideSelected = false
+	}
+	Export = 
+	{
+		ExportProps = true
+		ExportHidden = false
+		ExportFbxEmbedTextures = false
+		ExportFbxUnit = 0
+		ExportDefaultFormat = 0
+	}
+	Prefabs = 
+	{
+		WireframeColor = true
+	}
+	TileGrid = 
+	{
+		PaintOnlyFlat = true
+	}
+	"Editor Session Layouts" = 
+	{
+		_default = 
+		{
+			SplitFrames = 
+			{
+				"0" = 
+				{
+					SplitMode_t = "SPLIT_MODE_THREE_TWO_BOTTOM_ONE_TOP"
+					SubFrames = 
+					{
+						"0" = 
+						{
+							Class = "CQHammerPaneContainer"
+							PaneMode_t = "PANE_MODE_MAP_VIEW"
+							ViewType = "Camera"
+							DrawMode = "Fullbright"
+							ShowResolutionGate = false
+							ShowGridOfThirds = false
+						}
+						"1" = 
+						{
+							Class = "CQHammerPaneContainer"
+							PaneMode_t = "PANE_MODE_MAP_VIEW"
+							ViewType = "Top"
+							DrawMode = "Wireframe"
+							ShowResolutionGate = false
+							ShowGridOfThirds = false
+						}
+						"2" = 
+						{
+							Class = "CQHammerPaneContainer"
+							PaneMode_t = "PANE_MODE_ASSET_VIEW"
+						}
+					}
+					Splitters = 
+					{
+						"0" = 
+						{
+							state = "AAAA/wAAAAAAAAACAAACbwAAAm8BAAAABAAAAAAC"
+						}
+						"1" = 
+						{
+							NULL = true
+						}
+						"2" = 
+						{
+							NULL = true
+						}
+						"3" = 
+						{
+							state = "AAAA/wAAAAAAAAACAAADTQAAA00BAAAABAAAAAAB"
+						}
+					}
+					MaximizedSubframe = -1
+				}
+			}
+		}
+	}
+}

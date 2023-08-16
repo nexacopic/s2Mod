@@ -1,2729 +1,0 @@
-weapon_manifest
-{
-	"file"		"scripts/weapon_357.txt"
-	"file"		"scripts/weapon_bugbait.txt"
-	"file"		"scripts/weapon_crossbow.txt"
-	"file"		"scripts/weapon_crowbar.txt"
-	"file"		"scripts/weapon_physcannon.txt"
-	"file"		"scripts/weapon_pistol.txt"
-	"file"		"scripts/weapon_rpg.txt"
-	"file"		"scripts/weapon_ar2.txt"
-	"file"		"scripts/weapon_frag.txt"
-	"file"		"scripts/weapon_heavymg.txt"
-	"file"		"scripts/weapon_charger_melee.txt"
-	"file"		"scripts/weapon_shotgun.txt"
-	"file"		"scripts/weapon_smg1.txt"
-	"file"		"scripts/weapon_spygrenade.txt"
-}
-// 357
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"			"#HL2_357Handgun"
-	"viewmodel"			"models/weapons/v_357.vmdl"
-	"playermodel"		"models/weapons/w_357.vmdl"
-	"anim_prefix"		"python"
-	"bucket"			"1"
-	"bucket_position"	"1"
-	"bucket_360"			"0"
-	"bucket_position_360"	"1"
-
-	"clip_size"			"6"
-	"default_clip"		"6"
-	"primary_ammo"		"357"
-	"secondary_ammo"	"None"
-
-	"weight"		"7"
-	"rumble"		"2"
-	"item_flags"		"0"
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-		"empty"		"Weapon_Pistol.Empty"
-		"single_shot"	"Weapon_357.Single"
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"e"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"e"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"e"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"q"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"0"
-				"y"			"48"
-				"width"		"24"
-				"height"	"24"
-		}
-	}
-}// Bug bait
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_Bugbait"
-	"viewmodel"				"models/weapons/v_bugbait.vmdl"
-	"playermodel"			"models/weapons/w_bugbait.vmdl"
-	"anim_prefix"			"Grenade"
-	"bucket"				"5"
-	"bucket_position"		"0"
-	"bucket_360"			"3"
-	"bucket_position_360"	"2"
-
-	"clip_size"				"0"
-	"clip2_size"			"0"
-	"primary_ammo"			"None"
-	"secondary_ammo"		"None"
-	"default_clip"			"0"
-	"default_clip2"			"0"
-
-	"autoswitchto"			"0"
-	"autoswitchfrom"		"0"
-	"weight"				"0"
-	"item_flags"			"0"
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"j"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"j"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIcons"
-				"character"	"j"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"48"
-				"y"			"72"
-				"width"		"24"
-				"height"	"24"
-		}
-	}
-}// Crossbow
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"		"#HL2_Crossbow"
-	"viewmodel"		"models/weapons/v_crossbow.vmdl"
-	"playermodel"	"models/weapons/w_crossbow.vmdl"
-	"anim_prefix"	"bow"
-	"bucket"			"3"
-	"bucket_position"	"1"
-	"bucket_360"			"0"
-	"bucket_position_360"	"2"
-
-	"clip_size"		"1"
-	"default_clip"		"5"
-	"primary_ammo"		"XBowBolt"
-	"secondary_ammo"	"None"
-
-	"weight"		"6"
-	"item_flags"		"0"
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-		"single_shot"	"Weapon_Crossbow.Single"
-		"reload"	"Weapon_Crossbow.Reload"
-		"special1"	"Weapon_Crossbow.BoltElectrify"
-		"special2"	"Weapon_Crossbow.BoltFly"
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"g"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"g"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"g"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"w"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}		
-		"autoaim"
-		{
-			"file"		"sprites/crosshairs"
-			"x"		"0"
-			"y"		"96"
-			"width"		"24"
-			"height"	"24"
-		}
-		"zoom"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}		
-		"zoom_autoaim"
-		{
-			"file"		"sprites/crosshairs"
-			"x"		"24"
-			"y"		"112"
-			"width"		"104"
-			"height"	"16"
-		}
-	}
-}// Crowbar
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_Crowbar"
-	"viewmodel"				"models/weapons/v_crowbar.vmdl"
-	"playermodel"			"models/weapons/w_crowbar.vmdl"
-	"anim_prefix"			"crowbar"
-	"bucket"				"0"
-	"bucket_position"		"0"
-	"bucket_360"				"2"
-	"bucket_position_360"		"0"
-
-	"clip_size"				"-1"
-	"primary_ammo"			"None"
-	"secondary_ammo"		"None"
-
-	"weight"				"0"
-	"item_flags"			"0"
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-		"single_shot"		"Weapon_Crowbar.Single"
-		"melee_hit"			"Weapon_Crowbar.Melee_Hit"
-		"melee_hit_world"	"Weapon_Crowbar.Melee_HitWorld"
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"c"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"c"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIcons"
-				"character"	"c"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-			"file"		"sprites/crosshairs"
-			"x"			"0"
-			"y"			"48"
-			"width"		"24"
-			"height"	"24"
-		}
-	}
-}// Physics Gun
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_GravityGun"
-	"viewmodel"			"models/weapons/v_physcannon.vmdl"
-	"playermodel"		"models/weapons/w_Physics.vmdl"
-	"anim_prefix"		"gauss"
-	"bucket"			"0"
-	"bucket_position"	"1"
-	"bucket_360"			"2"
-	"bucket_position_360"	"1"
-	"clip_size"			"1"
-	"clip2_size"		"0"
-	"primary_ammo"		"None"
-	"secondary_ammo"	"None"
-	"default_clip"		"0"
-	"default_clip2"		"0"
-	"weight"			"0"
-	"autoswitchto"		"0"
-	"autoswitchfrom"	"0"
-	"item_flags"		"2"
-
-	SoundData
-	{
-		// launch held object
-		"single_shot"		"Weapon_PhysCannon.Launch"
-		// Ignore?
-		"reload"			"Weapon_PhysCannon.Charge"
-		// dry fire - no target
-		"empty"				"Weapon_PhysCannon.DryFire"
-		// pick up object
-		"special1"			"Weapon_PhysCannon.Pickup"
-		// open claws, target object
-		"special2"			"Weapon_PhysCannon.OpenClaws"
-		// close claws, target out of range/invalid
-		"melee_hit"			"Weapon_PhysCannon.CloseClaws"
-		// drop object
-		"melee_miss"		"Weapon_PhysCannon.Drop"
-		// too heavy
-		"special3"		"Weapon_PhysCannon.TooHeavy"
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"m"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"m"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-			"file"		"sprites/crosshairs"
-			"x"			"48"
-			"y"			"72"
-			"width"		"24"
-			"height"	"24"
-		}
-	}
-}// Pistol
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_Pistol"
-	"viewmodel"			"models/weapons/v_pistol.vmdl"
-	"playermodel"		"models/weapons/vr_pistol/vr_pistol.vmdl"
-	"anim_prefix"		"pistol"
-
-	"muzzleflash_particle"	"particles/ignore.vpcf"
-	"tracer_particle"		"particles/tracer_fx/pistol_tracer.vpcf"
-
-	"bucket"			"1"
-	"bucket_position"	"0"
-	"bucket_360"			"0"
-	"bucket_position_360"	"0"
-
-	"clip_size"			"18"
-	"primary_ammo"		"Pistol"
-	"secondary_ammo"	"None"
-
-	"weight"		"2"
-	"rumble"		"1"
-	"item_flags"		"0"
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-
-		"reload"		"Weapon_Pistol.Reload"
-		"reload_npc"	"Weapon_Pistol.NPC_Reload"
-		"empty"			"Weapon_Pistol.Empty"
-		"single_shot"	"Weapon_Pistol.Single"
-		"single_shot_npc"	"Weapon_Pistol.NPC_Single"
-		"special1"		"Weapon_Pistol.Special1"
-		"special2"		"Weapon_Pistol.Special2"
-		"burst"			"Weapon_Pistol.Burst"
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"d"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"d"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"d"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"p"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"0"
-				"y"			"48"
-				"width"		"24"
-				"height"	"24"
-		}
-	}
-}// Missile Launcher
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_RPG"
-	"viewmodel"				"models/weapons/v_rpg.vmdl"
-	"playermodel"			"models/weapons/w_rocket_launcher.vmdl"
-	"anim_prefix"			"missile launcher"
-	"bucket"				"4"
-	"bucket_position"		"1"
-	"autoswitchfrom"		"0"
-	"bucket_360"			"3"
-	"bucket_position_360"	"1"
-
-	"clip_size"				"-1"
-	"clip2_size"			"-1"
-	"default_clip"			"3"
-	"default_clip2"			"-1"
-
-	"primary_ammo"			"rpg_round"
-	"secondary_ammo"		"None"
-
-	"autoswitchto"			"0"
-	"weight"				"0"
-	"item_flags"			"2"
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-		"single_shot"		"Weapon_RPG.Single"
-		"single_shot_npc"	"Weapon_RPG.NPC_Single"
-		//Laser on
-		"special1"			"Weapon_RPG.LaserOn"
-		//Laser off
-		"special2"			"Weapon_RPG.LaserOff"
-		"empty"				"Weapon_SMG1.Empty"
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"i"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"i"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"i"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"x"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"48"
-				"y"			"72"
-				"width"		"24"
-				"height"	"24"
-		}
-	}
-}GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_Grenade"
-	"viewmodel"				"models/weapons/v_grenade.vmdl"
-	"playermodel"			"models/items/grenadeAmmo.vmdl"
-	"anim_prefix"			"Grenade"
-	"bucket"				"4"
-	"bucket_position"		"2"
-	"bucket_360"			"3"
-	"bucket_position_360"		"0"
-
-	"clip_size"				"-1"
-	"clip2_size"			"-1"
-	"default_clip"			"1"
-	"default_clip2"			"-1"
-	"autoswitchfrom"		"1"
-
-	"primary_ammo"			"grenade"
-	"secondary_ammo"		"None"
-
-	"weight"				"1"
-	"item_flags"			"18"	// ITEM_FLAG_NOAUTORELOAD | ITEM_FLAG_EXHAUSTIBLE
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-		"special1"		"WeaponFrag.Roll"
-		"double_shot"	"BaseCombatCharacter.StopWeaponSounds"  // FIXME, these should be using a gamesound name such as BaseCombatCharacter.StopWeaponSounds
-		"single_shot"	"BaseCombatCharacter.StopWeaponSounds"
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"k"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"k"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"k"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"v"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"48"
-				"y"			"72"
-				"width"		"24"
-				"height"	"24"
-		}
-	}
-}// Assault Rifle 2
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_Pulse_Rifle"
-	"viewmodel"				"models/weapons/v_irifle.vmdl"
-	"playermodel"			"models/weapons/vr_irifle/vr_irifle.vmdl"
-	"muzzleflash_particle"	"particles/weapon_fx/muzzleflash_smgs.vpcf"
-	"tracer_particle"		"particles/tracer_fx/smg_tracer.vpcf"
-	"anim_prefix"			"ar2"
-	"bucket"			"2"
-	"bucket_position"		"1"
-	"bucket_360"			"1"
-	"bucket_position_360"		"2"
-
-	"clip_size"			"30"
-	"default_clip"			"30"
-
-	"clip2_size"			"-1"
-	"default_clip2"			"-1"
-
-	"primary_ammo"			"AR2"
-	"secondary_ammo"		"AR2AltFire"
-	"autoswitchto"			"1"
-
-	"weight"				"5"
-	"rumble"			"4"
-	"item_flags"			"0"
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-		"special1"		"Weapon_CombineGuard.Special1"
-		"empty"			"Weapon_IRifle.Empty"
-		"double_shot"		"Weapon_IRifle.Single"
-		"reload"		"Weapon_AR2.Reload"
-		"single_shot"		"Weapon_AR2.Single"
-
-		// NPC SECTION
-		"single_shot_npc"	"CombineAR.Fire"
-		"reload_npc"		"Weapon_AR2.NPC_Reload"
-		"double_shot_npc"	"Weapon_AR2.NPC_Double"
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"l"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"l"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"l"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"u"
-		}
-		"ammo2"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"z"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"0"
-				"y"			"48"
-				"width"		"24"
-				"height"	"24"
-		}
-	}
-}// stunstick
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"				"ChargerMelee"
-	"viewmodel"				"models/weapons/v_shotgun.vmdl"
-	//"playermodel"			"models/weapons/vr_shotgun/vr_shotgun.vmdl"
-	"playermodel"			"models/weapons/w_ipistol/ipistol_wm.vmdl"	
-
-	"clip_size"				"-1"
-	"primary_ammo"			"None"
-	"secondary_ammo"		"None"
-
-	"weight"				"0"
-	"item_flags"			"0"
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-
-		"single_shot"		"Weapon_StunStick.Swing"
-		"melee_miss"		"Weapon_StunStick.Melee_Miss"
-		"melee_hit"			"Weapon_StunStick.Melee_Hit"
-		"melee_hit_world"	"Weapon_StunStick.Melee_HitWorld"
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"c"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"c"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIcons"
-				"character"	"c"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-			"file"		"sprites/crosshairs"
-			"x"			"0"
-			"y"			"48"
-			"width"		"24"
-			"height"	"24"
-		}
-	}
-}GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_Grenade"
-	"viewmodel"				"models/weapons/v_grenade.vmdl"
-	"playermodel"			"models/items/grenadeAmmo.vmdl"
-	"anim_prefix"			"Grenade"
-	"bucket"				"4"
-	"bucket_position"		"0"
-	"bucket_360"			"3"
-	"bucket_position_360"		"0"
-
-	"clip_size"				"-1"
-	"clip2_size"			"-1"
-	"default_clip"			"1"
-	"default_clip2"			"-1"
-	"autoswitchfrom"		"1"
-
-	"primary_ammo"			"grenade"
-	"secondary_ammo"		"None"
-
-	"weight"				"1"
-	"item_flags"			"18"	// ITEM_FLAG_NOAUTORELOAD | ITEM_FLAG_EXHAUSTIBLE
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-		"special1"		"WeaponFrag.Roll"
-		"double_shot"	"BaseCombatCharacter.StopWeaponSounds"  // FIXME, these should be using a gamesound name such as BaseCombatCharacter.StopWeaponSounds
-		"single_shot"	"BaseCombatCharacter.StopWeaponSounds"
-	}
-
-// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"k"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"k"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"k"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"v"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"48"
-				"y"			"72"
-				"width"		"24"
-				"height"	"24"
-		}
-	}
-}// Heavy MG
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"				"#HL2_Pulse_Rifle"
-	"playermodel"			"models/weapons/w_suppressor/suppressor_weapon.vmdl"
-	"anim_prefix"			"heavymg"
-	"muzzleflash_particle"	"particles/weapon_fx/muzzleflash_suppressor_fire.vpcf"
-	"tracer_particle"		"particles/tracer_fx/mg_heavy_tracer.vpcf"
-
-	"clip_size"				"120"
-	"default_clip"			"120"
-
-	"clip2_size"			"-1"
-	"default_clip2"			"-1"
-
-	"primary_ammo"			"HeavyMG"
-	"secondary_ammo"		"None"
-
-	"weight"				"5"
-	"rumble"				"4"
-	"item_flags"			"0"
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-		"empty"				"Weapon_IRifle.Empty"
-		"double_shot"		"CombineMG.Fire"
-		"reload"			"Weapon_AR2.Reload"
-		"single_shot"		"CombineMG.Fire"
-
-		// NPC SECTION
-		"single_shot_npc"	"CombineMG.FireLp"			// This isn't used, the NPC handles weapon sounds for this due to the windup/down
-		"reload_npc"		"Weapon_AR2.NPC_Reload"
-		"double_shot_npc"	"CombineMG.FireLp"			// This isn't used, the NPC handles weapon sounds for this due to the windup/down
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"l"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"l"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"l"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"u"
-		}
-		"ammo2"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"z"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"0"
-				"y"			"48"
-				"width"		"24"
-				"height"	"24"
-		}
-	}
-}// Shotgun
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_Shotgun"
-	"viewmodel"				"models/weapons/v_shotgun.vmdl"
-	"playermodel"			"models/weapons/vr_shotgun/vr_shotgun.vmdl"
-	"anim_prefix"			"shotgun"
-	"muzzleflash_particle"	"particles/weapon_fx/muzzleflash_heavy_shotgun.vpcf"
-	"tracer_particle"		"particles/tracer_fx/alyxgun_cannon_tracer.vpcf"
-	"bucket"				"3"
-	"bucket_position"		"0"
-	"bucket_360"			"1"
-	"bucket_position_360"	"1"
-
-	"clip_size"				"6"
-	"primary_ammo"			"Buckshot"
-	"secondary_ammo"		"None"
-	"autoswitchto"			"1"
-
-	"weight"				"4"
-	"rumble"			"5"
-	"item_flags"			"0"
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-
-		"empty"				"Weapon_Shotgun.Empty"
-		"reload"			"Weapon_Shotgun.Reload"
-		"special1"			"Weapon_Shotgun.Special1"
-		"single_shot"		"Weapon_Shotgun.Single"
-		"double_shot"		"Weapon_Shotgun.Double"
-		// NPC WEAPON SOUNDS
-		"reload_npc"		"Weapon_Shotgun.NPC_Reload"
-		"single_shot_npc"		"CombineShotgun.Fire"
-	}
-
-	// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"b"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"b"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"b"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"s"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"0"
-				"y"			"48"
-				"width"		"24"
-				"height"	"24"
-		}
-	}
-}// Small Machine Gun 1
-
-GameFileWeaponInfo_t
-{
-	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_SMG1"
-	"viewmodel"				"models/weapons/v_smg1.vmdl"
-	"playermodel"			"models/weapons/w_ipistol/ipistol_wm.vmdl"	
-	"anim_prefix"			"smg2"
-	"muzzleflash_particle"	"particles/weapon_fx/muzzleflash_smg_heavy_fire_light.vpcf"
-	"tracer_particle"		"particles/tracer_fx/smg_tracer.vpcf"
-
-	"bucket"				"2"
-	"bucket_position"		"0"
-	"bucket_360"			"1"
-	"bucket_position_360"	"0"
-
-	"clip_size"				"45"
-	"clip2_size"			"-1"
-
-	"default_clip"			"45"
-	"default_clip2"			"-1"
-
-	"primary_ammo"			"SMG1"
-	"secondary_ammo"		"SMG1_Grenade"
-	"autoswitchto"			"1"
-
-	"weight"				"3"
-	"rumble"			"3"
-	"item_flags"			"0"
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-		"reload"			"Weapon_SMG1.Reload"
-		"reload_npc"		"Weapon_SMG1.NPC_Reload"
-		"empty"				"Weapon_SMG1.Empty"
-		"single_shot"		"Weapon_SMG1.Single"
-		"single_shot_npc"	"CombineSMG.Fire"
-		"special1"			"Weapon_SMG1.Special1"
-		"special2"			"Weapon_SMG1.Special2"
-		"double_shot"		"Weapon_SMG1.Double"
-		"burst"				"Weapon_SMG1.Burst"
-	}
-
-		// Weapon Sprite data is loaded by the Client DLL.
-	TextureData
-	{
-		"weapon"
-		{
-				"font"		"WeaponIcons"
-				"character"	"a"
-		}
-		"weapon_s"
-		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"a"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"a"
-		}
-		"ammo"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"r"
-		}
-		"ammo2"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"t"
-		}
-		"crosshair"
-		{
-				"font"		"Crosshairs"
-				"character"	"Q"
-		}
-		"autoaim"
-		{
-				"file"		"sprites/crosshairs"
-				"x"			"0"
-				"y"			"48"
-				"width"		"24"
-				"height"	"24"
-		}
-	}
-}"Resource/HudLayout.res"
-{
-	HudHealth [$WIN32]
-	{
-		"fieldName"		"HudHealth"
-		"xpos"	"16"
-		"ypos"	"432"
-		"wide"	"102"
-		"tall"  "36"
-		"visible" "1"
-		"enabled" "1"
-
-		"PaintBackgroundType"	"2"
-		
-		"text_xpos" "8"
-		"text_ypos" "20"
-		"digit_xpos" "50"
-		"digit_ypos" "2"
-	}
-	HudHealth [$X360]
-	{
-		"fieldName"		"HudHealth"
-		"xpos"	"48"
-		"ypos"	"416"
-		"wide"	"115"
-		"tall"  "36"
-		"visible" "1"
-		"enabled" "1"
-
-		"PaintBackgroundType"	"2"
-		
-		"text_xpos" "8"
-		"text_ypos" "18"
-		"digit_xpos" "60"
-		"digit_ypos" "-1"
-	}
-
-	HudAmmo	[$WIN32]
-	{
-		"fieldName" "HudAmmo"
-		"xpos"	"r150"
-		"ypos"	"432"
-		"wide"	"136"
-		"tall"  "36"
-		"visible" "1"
-		"enabled" "1"
-
-		"PaintBackgroundType"	"2"
-
-		"text_xpos" "8"
-		"text_ypos" "20"
-		"digit_xpos" "44"
-		"digit_ypos" "2"
-		"digit2_xpos" "98"
-		"digit2_ypos" "16"
-	}
-	HudAmmo	[$X360]
-	{
-		"fieldName" "HudAmmo"
-		"xpos"	"r208"
-		"ypos"	"416"
-		"wide"	"160"
-		"tall"  "36"
-		"visible" "1"
-		"enabled" "1"
-
-		"PaintBackgroundType"	"2"
-
-		"text_xpos" "8"
-		"text_ypos" "18"
-		"digit_xpos" "60"
-		"digit_ypos" "-1"
-		"digit2_xpos" "120"
-		"digit2_ypos" "14"
-	}
-
-	HudAmmoSecondary	[$WIN32]
-	{
-		"fieldName" "HudAmmoSecondary"
-		"xpos"	"r76"
-		"ypos"	"432"
-		"wide"	"60"
-		"tall"  "36"
-		"visible" "1"
-		"enabled" "1"
-
-		"PaintBackgroundType"	"2"
-
-		"text_xpos" "8"
-		"text_ypos" "22"
-		"digit_xpos" "36"
-		"digit_ypos" "2"
-	}
-	HudAmmoSecondary	[$X360]
-	{
-		"fieldName" "HudAmmoSecondary"
-		"xpos"	"r113"
-		"ypos"	"416"
-		"wide"	"65"
-		"tall"  "36"
-		"visible" "1"
-		"enabled" "1"
-
-		"PaintBackgroundType"	"2"
-
-		"text_xpos" "8"
-		"text_ypos" "22"
-		"digit_xpos" "36"
-		"digit_ypos" "-1"
-	}
-	
-	HudSuitPower	[$WIN32]
-	{
-		"fieldName" "HudSuitPower"
-		"visible" "1"
-		"enabled" "1"
-		"xpos"	"16"
-		"ypos"	"396"
-		"wide"	"102"
-		"tall"	"26"
-		
-		"AuxPowerLowColor" "255 0 0 220"
-		"AuxPowerHighColor" "255 220 0 220"
-		"AuxPowerDisabledAlpha" "70"
-
-		"BarInsetX" "8"
-		"BarInsetY" "15"
-		"BarWidth" "92"
-		"BarHeight" "4"
-		"BarChunkWidth" "6"
-		"BarChunkGap" "3"
-
-		"text_xpos" "8"
-		"text_ypos" "4"
-		"text2_xpos" "8"
-		"text2_ypos" "22"
-		"text2_gap" "10"
-
-		"PaintBackgroundType"	"2"
-	}
-	HudSuitPower	[$X360]
-	{
-		"fieldName" "HudSuitPower"
-		"visible" "1"
-		"enabled" "1"
-		"xpos"	"48"
-		"ypos"	"370"
-		"wide"	"102"
-		"tall"	"26"
-		
-		"AuxPowerLowColor" "255 100 0 220"
-		"AuxPowerHighColor" "255 220 0 220"
-		"AuxPowerDisabledAlpha" "70"
-
-		"BarInsetX" "8"
-		"BarInsetY" "19"
-		"BarWidth" "92"
-		"BarHeight" "5"
-		"BarChunkWidth" "6"
-		"BarChunkGap" "3"
-
-		"text_xpos" "8"
-		"text_ypos" "4"
-		"text2_xpos" "8"
-		"text2_ypos" "25"
-		"text2_gap" "12"
-
-		"PaintBackgroundType"	"2"
-	}
-
-	HudPosture	[$WIN32]
-	{
-		"fieldName" 		"HudPosture"
-		"visible" 		"1"
-		"PaintBackgroundType"	"2"
-		"xpos"	"16"
-		"ypos"	"316"
-		"tall"  "36"
-		"wide"	"36"
-		"font"	"WeaponIconsSmall"
-		"icon_xpos"	"10"
-		"icon_ypos" 	"0"
-	}
-	HudPosture	[$X360]
-	{
-		"fieldName" 		"HudPosture"
-		"visible" 		"1"
-		"PaintBackgroundType"	"2"
-		"xpos"	"48"
-		"ypos"	"316"
-		"tall"  "36"
-		"wide"	"36"
-		"font"	"WeaponIconsSmall"
-		"icon_xpos"	"10"
-		"icon_ypos" 	"2"
-	}
-	
-	HudFlashlight
-	{
-		"fieldName" "HudFlashlight"
-		"visible" "1"
-		"alpha" "0"
-		"PaintBackgroundType"	"2"
-		"xpos"	"270"		[$WIN32]
-		"ypos"	"444"		[$WIN32]
-		"xpos_hidef"	"293"		[$X360]		// aligned to left
-		"xpos_lodef"	"c-18"		[$X360]		// centered in screen
-		"ypos"	"428"		[$X360]				
-		"tall"  "24"
-		"wide"	"36"
-		"font"	"WeaponIconsSmall"
-		
-		"icon_xpos"	"4"
-		"icon_ypos" "-8"
-		
-		"BarInsetX" "4"
-		"BarInsetY" "18"
-		"BarWidth" "28"
-		"BarHeight" "2"
-		"BarChunkWidth" "2"
-		"BarChunkGap" "1"
-	}
-	HudDamageIndicator
-	{
-		"fieldName" "HudDamageIndicator"
-		"visible" "1"
-		"enabled" "1"
-		"DmgColorLeft" "255 0 0 0"
-		"DmgColorRight" "255 0 0 0"
-		
-		"dmg_xpos" "30"
-		"dmg_ypos" "100"
-		"dmg_wide" "36"
-		"dmg_tall1" "240"
-		"dmg_tall2" "200"
-	}
-
-	HudZoom
-	{
-		"fieldName" "HudZoom"
-		"visible" "1"
-		"enabled" "1"
-		"Circle1Radius" "66"
-		"Circle2Radius"	"74"
-		"DashGap"	"16"
-		"DashHeight" "4"	[$WIN32]
-		"DashHeight" "6"	[$X360]		
-		"BorderThickness" "88"
-	}
-	HudWeaponSelection
-	{
-		"fieldName" "HudWeaponSelection"
-		"ypos" 	"16"	[$WIN32]
-		"ypos" 	"32"	[$X360]
-		"visible" "1"
-		"enabled" "1"
-		"SmallBoxSize" "32"
-		"MediumBoxWide"	"95"
-		"MediumBoxWide_hidef"	"78"
-		"MediumBoxTall"	"50"
-		"MediumBoxTall_hidef"	"50"
-		"MediumBoxWide_lodef"	"74"
-		"MediumBoxTall_lodef"	"50"
-		"LargeBoxWide" "112"
-		"LargeBoxTall" "80"
-		"BoxGap" "8"
-		"SelectionNumberXPos" "4"
-		"SelectionNumberYPos" "4"
-		"SelectionGrowTime"	"0.4"
-		"TextYPos" "64"
-	}
-
-	HudCrosshair
-	{
-		"fieldName" "HudCrosshair"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	HudDeathNotice
-	{
-		"fieldName" "HudDeathNotice"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	HudVehicle
-	{
-		"fieldName" "HudVehicle"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	ScorePanel
-	{
-		"fieldName" "ScorePanel"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	HudTrain
-	{
-		"fieldName" "HudTrain"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	HudMOTD
-	{
-		"fieldName" "HudMOTD"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	HudMessage
-	{
-		"fieldName" "HudMessage"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "f0"
-		"tall"	 "480"
-	}
-
-	HudMenu
-	{
-		"fieldName" "HudMenu"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	HudCloseCaption
-	{
-		"fieldName" "HudCloseCaption"
-		"visible"	"1"
-		"enabled"	"1"
-		"xpos"		"c-250"
-		"ypos"		"276"	[$WIN32]
-		"ypos"		"236"	[$X360]
-		"wide"		"500"
-		"tall"		"136"	[$WIN32]
-		"tall"		"176"	[$X360]
-
-		"BgAlpha"	"128"
-
-		"GrowTime"		"0.25"
-		"ItemHiddenTime"	"0.2"  // Nearly same as grow time so that the item doesn't start to show until growth is finished
-		"ItemFadeInTime"	"0.15"	// Once ItemHiddenTime is finished, takes this much longer to fade in
-		"ItemFadeOutTime"	"0.3"
-		"topoffset"		"0"		[$WIN32]
-		"topoffset"		"0"	[$X360]
-	}
-
-	HudChat
-	{
-		"fieldName" "HudChat"
-		"visible" "0"
-		"enabled" "1"
-		"xpos"	"0"
-		"ypos"	"0"
-		"wide"	 "4"
-		"tall"	 "4"
-	}
-
-	HudHistoryResource	[$WIN32]
-	{
-		"fieldName" "HudHistoryResource"
-		"visible" "1"
-		"enabled" "1"
-		"xpos"	"r252"
-		"ypos"	"40"
-		"wide"	 "248"
-		"tall"	 "320"
-
-		"history_gap"	"56" [!$OSX]
-		"history_gap"	"64" [$OSX]
-		"icon_inset"	"38"
-		"text_inset"	"36"
-		"text_inset"	"26"
-		"NumberFont"	"HudNumbersSmall"
-	}
-	HudHistoryResource	[$X360]
-	{
-		"fieldName" "HudHistoryResource"
-		"visible" "1"
-		"enabled" "1"
-		"xpos"	"r300"
-		"ypos"	"40" 
-		"wide"	 "248"
-		"tall"	 "240"
-
-		"history_gap"	"50"
-		"icon_inset"	"38"
-		"text_inset"	"36"
-		"NumberFont"	"HudNumbersSmall"
-	}
-
-	HudGeiger
-	{
-		"fieldName" "HudGeiger"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	HUDQuickInfo
-	{
-		"fieldName" "HUDQuickInfo"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	HudWeapon
-	{
-		"fieldName" "HudWeapon"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-	HudAnimationInfo
-	{
-		"fieldName" "HudAnimationInfo"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	HudPredictionDump
-	{
-		"fieldName" "HudPredictionDump"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
-	HudHintDisplay
-	{
-		"fieldName"				"HudHintDisplay"
-		"visible"				"0"
-		"enabled"				"1"
-		"xpos"					"c-240"
-		"ypos"					"c60"
-		"xpos"	"r148"	[$X360]
-		"ypos"	"r338"	[$X360]
-		"wide"					"480"
-		"tall"					"100"
-		"HintSize"				"1"
-		"text_xpos"				"8"
-		"text_ypos"				"8"
-		"center_x"				"0"	// center text horizontally
-		"center_y"				"-1"	// align text on the bottom
-		"paintbackground"		"0"
-	}	
-
-	HudHintKeyDisplay
-	{
-		"fieldName"	"HudHintKeyDisplay"
-		"visible"	"0"
-		"enabled" 	"1"
-		"xpos"		"r120"	[$WIN32]
-		"ypos"		"r340"	[$WIN32]
-		"xpos"		"r148"	[$X360]
-		"ypos"		"r338"	[$X360]
-		"wide"		"100"
-		"tall"		"200"
-		"text_xpos"	"8"
-		"text_ypos"	"8"
-		"text_xgap"	"8"
-		"text_ygap"	"8"
-		"TextColor"	"255 170 0 220"
-
-		"PaintBackgroundType"	"2"
-	}
-
-
-	HudSquadStatus	[$WIN32]
-	{
-		"fieldName"	"HudSquadStatus"
-		"visible"	"1"
-		"enabled" "1"
-		"xpos"	"r120"
-		"ypos"	"380"
-		"wide"	"104"
-		"tall"	"46"
-		"text_xpos"	"8"
-		"text_ypos"	"34"
-		"SquadIconColor"	"255 220 0 160"
-		"IconInsetX"	"8"
-		"IconInsetY"	"0"
-		"IconGap"		"24"
-
-		"PaintBackgroundType"	"2"
-	}
-	HudSquadStatus	[$X360]
-	{
-		"fieldName"	"HudSquadStatus"
-		"visible"	"1"
-		"enabled" "1"
-		"xpos"	"r182"
-		"ypos"	"348"
-		"wide"	"134"
-		"tall"	"62"
-		"text_xpos"	"8"
-		"text_ypos"	"44"
-		"SquadIconColor"	"255 220 0 160"
-		"IconInsetX"	"8"
-		"IconInsetY"	"-4"
-		"IconGap"		"24"
-		"IconFont"		"SquadIcon"
-
-		"PaintBackgroundType"	"2"
-	}
-
-	HudPoisonDamageIndicator	[$WIN32]
-	{
-		"fieldName"	"HudPoisonDamageIndicator"
-		"visible"	"0"
-		"enabled" "1"
-		"xpos"	"16"
-		"ypos"	"346"
-		"wide"	"136"
-		"tall"	"38"
-		"text_xpos"	"8"
-		"text_ypos"	"8"
-		"text_ygap" "14"
-		"TextColor"	"255 170 0 220"
-		"PaintBackgroundType"	"2"
-	}
-	HudPoisonDamageIndicator	[$X360]
-	{
-		"fieldName"	"HudPoisonDamageIndicator"
-		"visible"	"0"
-		"enabled" "1"
-		"xpos"	"48"
-		"ypos"	"264"
-		"wide"	"192"
-		"tall"	"46"
-		"text_xpos"	"8"
-		"text_ypos"	"6"
-		"text_ygap" "16"
-		"TextColor"	"255 170 0 220"
-		"PaintBackgroundType"	"2"
-	}
-
-	HudCredits
-	{
-		"fieldName"	"HudCredits"
-		"TextFont"	"Default"
-		"visible"	"1"
-		"xpos"	"0"
-		"ypos"	"0"
-		"wide"	"640"
-		"tall"	"480"
-		"TextColor"	"255 255 255 192"
-
-	}
-	
-	HUDAutoAim
-	{
-		"fieldName" "HUDAutoAim"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"	[$WIN32]
-		"tall"	 "480"	[$WIN32]
-		"wide"	 "960"	[$X360]
-		"tall"	 "720"	[$X360]
-	}
-
-	HudCommentary
-	{
-		"fieldName" "HudCommentary"
-		"xpos"	"c-190"
-		"ypos"	"350"
-		"wide"	"380"
-		"tall"  "40"
-		"visible" "1"
-		"enabled" "1"
-		
-		"PaintBackgroundType"	"2"
-		
-		"bar_xpos"		"50"
-		"bar_ypos"		"20"
-		"bar_height"	"8"
-		"bar_width"		"320"
-		"speaker_xpos"	"50"
-		"speaker_ypos"	"8"
-		"count_xpos_from_right"	"10"	// Counts from the right side
-		"count_ypos"	"8"
-		
-		"icon_texture"	"materials/vgui/hud/icon_commentary.vmat"
-		"icon_xpos"		"0"
-		"icon_ypos"		"0"		
-		"icon_width"	"40"
-		"icon_height"	"40"
-	}
-	
-	HudHDRDemo
-	{
-		"fieldName" "HudHDRDemo"
-		"xpos"	"0"
-		"ypos"	"0"
-		"wide"	"640"
-		"tall"  "480"
-		"visible" "1"
-		"enabled" "1"
-		
-		"Alpha"	"255"
-		"PaintBackgroundType"	"2"
-		
-		"BorderColor"	"0 0 0 255"
-		"BorderLeft"	"16"
-		"BorderRight"	"16"
-		"BorderTop"		"16"
-		"BorderBottom"	"64"
-		"BorderCenter"	"0"
-		
-		"TextColor"		"255 255 255 255"
-		"LeftTitleY"	"422"
-		"RightTitleY"	"422"
-	}
-
-	AchievementNotificationPanel	
-	{
-		"fieldName"				"AchievementNotificationPanel"
-		"visible"				"1"
-		"enabled"				"1"
-		"xpos"					"0"
-		"ypos"					"180"
-		"wide"					"f10"	[$WIN32]
-		"wide"					"f60"	[$X360]
-		"tall"					"100"
-	}
-
-	CHudVote
-	{
-		"fieldName"		"CHudVote"
-		"xpos"			"0"			
-		"ypos"			"0"
-		"wide"			"640"
-		"tall"			"480"
-		"visible"		"1"
-		"enabled"		"1"
-		"bgcolor_override"	"0 0 0 0"
-		"PaintBackgroundType"	"0" // rounded corners
-	}	
-}// sample animation script
-//
-//
-// commands:
-//	Animate <panel name> <variable> <target value> <interpolator> <start time> <duration>
-//		variables:
-//			FgColor
-//			BgColor
-//			Position
-//			Size
-//			Blur		(hud panels only)
-//			TextColor	(hud panels only)
-//			Ammo2Color	(hud panels only)
-//			Alpha		(hud weapon selection only)
-//			SelectionAlpha  (hud weapon selection only)
-//			TextScan	(hud weapon selection only)
-//
-//		interpolator:
-//			Linear
-//			Accel - starts moving slow, ends fast
-//			Deaccel - starts moving fast, ends slow
-//
-//	RunEvent <event name> <start time>
-//		starts another even running at the specified time
-//
-//	StopEvent <event name> <start time>
-//		stops another event that is current running at the specified time
-//
-//	StopAnimation <panel name> <variable> <start time>
-//		stops all animations refering to the specified variable in the specified panel
-//
-//	StopPanelAnimations <panel name> <start time>
-//		stops all active animations operating on the specified panel
-//
-//
-// Useful game console commands:
-//	cl_Animationinfo <hudelement name> or <panelname> 
-//		displays all the animatable variables for the hud element
-//
-
-
-event LevelInit
-{
-}
-
-event WeaponHighlight
-{
-	Animate HudWeaponSelection		Blur		"7"			Linear		0.0	0.0 
-	Animate HudWeaponSelection		Blur		"0"			Deaccel		0.01	0.75 
-
-	Animate HudWeaponSelection		SelectedBoxColor	"250 220 0 80"	Linear	0.0		0.01
-	Animate HudWeaponSelection		SelectedBoxColor	"BgColor"		Deaccel	0.1		1.5
-	Animate HudWeaponSelection		SelectedFgColor		"BrightFg"		Linear	0.0		0.1
-	Animate HudWeaponSelection		SelectedFgColor		"FgColor"		Linear	5.0		1.5
-}
-
-event OpenWeaponSelectionMenu
-{
-	StopEvent CloseWeaponSelectionMenu	0.0
-	StopEvent WeaponPickup				0.0
-	StopEvent FadeOutWeaponSelectionMenu	0.0
-
-	// make the display visible
-	Animate HudWeaponSelection Alpha 		"128"		Linear 0.0 0.1	[$WIN32]
-	Animate HudWeaponSelection Alpha 		"192"		Linear 0.0 0.1	[$X360]
-	Animate HudWeaponSelection SelectionAlpha 	"255"		Linear 0.0 0.1
-	Animate HudWeaponSelection FgColor		"FgColor"	Linear 0.0 0.1
-	Animate HudWeaponSelection TextColor		"BrightFg"	Linear 0.0 0.1
-	Animate HudWeaponSelection TextScan		"1" 		Linear 0.0 0.1
-}
-
-event CloseWeaponSelectionMenu
-{
-	// hide the whole thing near immediately
-	Animate HudWeaponSelection FgColor		"0 0 0 0"	Linear 0.0 0.1
-	Animate HudWeaponSelection TextColor		"0 0 0 0"	Linear 0.0 0.1
-	Animate HudWeaponSelection Alpha		"0" 		Linear 0.0 0.1
-	Animate HudWeaponSelection SelectionAlpha 	"0" 		Linear 0.0 0.1
-}
-
-event FadeOutWeaponSelectionMenu
-{
-	// slowly hide the whole thing
-	Animate HudWeaponSelection FgColor		"0 0 0 0"	Linear 0.5 1.0
-	Animate HudWeaponSelection TextColor		"0 0 0 0"	Linear 0.5 1.0
-	Animate HudWeaponSelection Alpha		"0" 		Linear 0.5 1.0
-	Animate HudWeaponSelection SelectionAlpha 	"0" 		Linear 0.5 1.0
-
-	Animate HudWeaponSelection WeaponBoxDist1Alpha	"0 0 0 0"	Linear 0.0 0.5
-	Animate HudWeaponSelection WeaponBoxDist2Alpha	"0 0 0 0"	Linear 0.0 0.5
-	Animate HudWeaponSelection WeaponBoxDist3Alpha	"0 0 0 0"	Linear 0.0 0.5
-}
-
-event SuitAuxPowerMax
-{
-	// hide the suit power
-	Animate HudSuitPower BgColor		"0 0 0 0"		Linear 0.0 0.4
-	Animate HudSuitPower AuxPowerColor	"0 0 0 0"		Linear 0.0 0.4
-}
-
-event SuitAuxPowerNotMax
-{
-	// show suit power
-	Animate HudSuitPower BgColor		"BgColor"		Linear 0.0 0.4
-	Animate HudSuitPower AuxPowerColor	"255 220 0 220"		Linear 0.0 0.4
-}
-
-event SuitAuxPowerDecreasedBelow25
-{
-	// make color red
-	Animate HudSuitPower AuxPowerColor	"255 0 0 220"		Linear 0.0 0.4
-}
-
-event SuitAuxPowerIncreasedAbove25
-{
-	// make colr bright
-	Animate HudSuitPower AuxPowerColor	"255 220 0 220"		Linear 0.0 0.4
-}
-
-event SuitAuxPowerNoItemsActive
-{
-	// resize the aux power to be the smallest size
-	Animate HudSuitPower Size			"102 26"			Linear 0.0 0.4	[$WIN32]
-	Animate HudSuitPower Position		"16 400"			Linear 0.0 0.4	[$WIN32]
-	Animate HudSuitPower Size			"102 32"			Linear 0.0 0.4	[$X360]
-	Animate HudSuitPower Position		"48 378"			Linear 0.0 0.4	[$X360]
-}
-
-event SuitAuxPowerOneItemActive
-{
-	// resize the aux power to fit one item
-	Animate HudSuitPower Size			"102 36"			Linear 0.0 0.4	[$WIN32]
-	Animate HudSuitPower Position		"16 390"			Linear 0.0 0.4	[$WIN32]
-	Animate HudSuitPower Size			"102 42"			Linear 0.0 0.4	[$X360]
-	Animate HudSuitPower Position		"48 368"			Linear 0.0 0.4	[$X360]
-}
-
-event SuitAuxPowerTwoItemsActive
-{
-	// resize the aux power to fit two items
-	Animate HudSuitPower Size			"102 46"			Linear 0.0 0.4	[$WIN32]
-	Animate HudSuitPower Position		"16 380"			Linear 0.0 0.4	[$WIN32]
-	Animate HudSuitPower Size			"102 52"			Linear 0.0 0.4	[$X360]
-	Animate HudSuitPower Position		"48 358"			Linear 0.0 0.4	[$X360]
-}
-
-event SuitAuxPowerThreeItemsActive
-{
-	// resize the aux power to fit three items
-	Animate HudSuitPower Size			"102 56"			Linear 0.0 0.4	[$WIN32]
-	Animate HudSuitPower Position		"16 370"			Linear 0.0 0.4	[$WIN32]
-	Animate HudSuitPower Size			"102 62"			Linear 0.0 0.4	[$X360]
-	Animate HudSuitPower Position		"48 348"			Linear 0.0 0.4	[$X360]
-}
-
-event SuitFlashlightOn
-{
-	Animate HudFlashlight TextColor		"255 220 0 255"	Linear 0.0 0.1
-	Animate HudFlashlight TextColor		"255 220 0 160"	Deaccel 0.1 0.75
-	Animate HudFlashlight BgColor		"BgColor"	Linear 0.0 0.75
-}
-
-event SuitFlashlightOff
-{
-	StopEvent SuitFlashlightOn	0.0
-	Animate HudFlashlight TextColor		"0 0 0 0"	Linear 0.0 0.4
-	Animate HudFlashlight BgColor		"0 0 0 0"	Linear 0.0 0.4
-}
-
-event HudTakeDamageFront
-{
-}
-
-event HudTakeDamageLeft
-{
-	Animate HudDamageIndicator DmgColorLeft		"255 88 0 200"	Linear 0.0 0.0
-	Animate HudDamageIndicator DmgColorLeft		"255 0 0 200"	Linear 0.0 0.3
-	Animate HudDamageIndicator DmgColorLeft		"255 0 0 0"	Deaccel 0.3 0.5
-}
-
-event HudTakeDamageRight
-{
-	Animate HudDamageIndicator DmgColorRight		"255 88 0 200"	Linear 0.0 0.0
-	Animate HudDamageIndicator DmgColorRight		"255 0 0 200"	Linear 0.0 0.3
-	Animate HudDamageIndicator DmgColorRight		"255 0 0 0"	Deaccel 0.3 0.5
-}
-
-event HudTakeDamageBehind
-{
-	RunEvent HudTakeDamageLeft	0.0
-	RunEvent HudTakeDamageRight	0.0
-}
-
-event HudTakeDamageHighLeft
-{
-	Animate HudDamageIndicator DmgHighColorLeft	"255 88 0 255"	Linear 0.0 0.0
-	Animate HudDamageIndicator DmgHighColorLeft	"255 0 0 200"	Linear 0.0 0.4
-	Animate HudDamageIndicator DmgHighColorLeft	"255 0 0 0"	Deaccel 0.4 2.4
-}
-
-event HudTakeDamageHighRight
-{
-	Animate HudDamageIndicator DmgHighColorRight	"255 88 0 255"	Linear 0.0 0.0
-	Animate HudDamageIndicator DmgHighColorRight	"255 0 0 200"	Linear 0.0 0.4
-	Animate HudDamageIndicator DmgHighColorRight	"255 0 0 0"	Deaccel	0.4 2.4
-}
-
-event HudTakeDamageHigh
-{
-	Animate HudDamageIndicator DmgFullscreenColor	"255 88 0 200"	Linear 0.0 0.0
-	Animate HudDamageIndicator DmgFullscreenColor	"255 0 0 200"	Linear 0.0 0.4
-	Animate HudDamageIndicator DmgFullscreenColor	"255 0 0 0"	Deaccel 0.4 2.4
-}
-
-event HudTakeDamageDrown
-{
-	RunEvent HudTakeDamageBehind 0.0
-}
-
-event HudTakeDamagePoison
-{
-	Animate HudDamageIndicator DmgFullscreenColor	"255 236 128 240"	Linear 0.0 0.0
-	Animate HudDamageIndicator DmgFullscreenColor	"255 236 128 0"		Deaccel 0.4 0.8
-}
-
-event HudTakeDamageBurn
-{
-	Animate HudDamageIndicator DmgFullscreenColor	"255 0 0 200"	Linear 0.0 0.0
-	Animate HudDamageIndicator DmgFullscreenColor	"255 0 0 0"	Deaccel 0.2 0.4
-}
-
-event HudTakeDamageRadiation
-{
-	Animate HudDamageIndicator DmgFullscreenColor	"255 255 255 128"	Deaccel 0.0 0.1
-	Animate HudDamageIndicator DmgFullscreenColor	"255 255 255 0"		Deaccel 0.1 0.4
-	RunEvent HudTakeDamageBehind 0.0
-}
-
-event HudPlayerDeath
-{
-	StopEvent	HealthLoop  0.0
-	StopEvent	HealthPulse 0.0
-
-//	Animate HudDamageIndicator DmgFullscreenColor	"255 0 0 96"		Deaccel 0.1 0.2
-//	Animate HudDamageIndicator DmgFullscreenColor	"255 0 0 255"		Deaccel 0.3 4.0
-}
-
-event HealthIncreasedAbove20
-{
-	StopEvent	HealthLoop  0.0
-	StopEvent	HealthPulse 0.0
-	StopEvent	HealthLow   0.0
-
-	Animate	HudHealth	BgColor	"BgColor"	Linear	0.0	0.0
-	
-	Animate	HudHealth	TextColor "FgColor" Linear 0.0 0.04
-	Animate	HudHealth	FgColor   "FgColor" Linear 0.0 0.03
-	
-	Animate	HudHealth		Blur		"3"			Linear	0.0		0.1
-	Animate	HudHealth		Blur		"0"			Deaccel	0.1		2.0
-}
-
-event HealthIncreasedBelow20
-{
-	Animate HudHealth	FgColor		"BrightFg"	Linear	0.0		0.25
-	Animate HudHealth	FgColor		"FgColor"		Linear	0.3		0.75
-	
-	Animate HudHealth		Blur		"3"			Linear	0.0		0.1
-	Animate HudHealth		Blur		"0"			Deaccel	0.1		2.0
-}
-
-event SuitPowerIncreasedAbove20
-{
-	StopEvent	SuitLoop 0.0
-	StopEvent	SuitPulse 0.0
-	StopEvent	SuitPowerZero	0.0
-
-	Animate	HudSuit 	Alpha		"255"			Linear 0.0 0.0
-
-	Animate	HudSuit		BgColor		"BgColor"	Linear	0.0	0.0
-	
-	Animate	HudSuit 	TextColor	"FgColor"	Linear 0.0 0.05
-	Animate	HudSuit		FgColor		"FgColor"	Linear 0.0 0.05
-	
-	Animate	HudSuit		Blur		"3"			Linear	0.0		0.1
-	Animate	HudSuit		Blur		"0"			Deaccel	0.1		2.0
-}
-
-
-event SuitPowerIncreasedBelow20
-{
-	StopEvent		SuitPowerZero	0.0
-	Animate	HudSuit 	Alpha		"255"			Linear 0.0 0.0
-
-	Animate HudSuit		FgColor		"BrightFg"	Linear	0.0		0.25
-	Animate HudSuit		FgColor		"FgColor"	Linear	0.3		0.75
-	
-	Animate HudSuit		Blur		"3"			Linear	0.0		0.1
-	Animate HudSuit		Blur		"0"			Deaccel	0.1		2.0
-}
-
-event SuitPowerZero
-{
-	StopEvent	SuitLoop 0.0
-	StopEvent	SuitPulse 0.0
-	StopEvent	SuitArmorLow 0.0
-	StopEvent	SuitDamageTaken 0.0
-
-	Animate	HudSuit Alpha		"0"			Linear 0.0 0.4
-}
-
-event TestMovement
-{
-	Animate HudHealth	Position	"256 120"	Linear	0.0		2.0
-	Animate HudHealth	Size		"128 24"	Linear	0.0		1.5
-}
-
-event HealthDamageTaken
-{
-	Animate HudHealth	FgColor		"BrightFg"	Linear	0.0		0.25
-	Animate HudHealth	FgColor		"FgColor"		Linear	0.3		0.75
-	
-	Animate HudHealth		Blur		"3"			Linear	0.0		0.1
-	Animate HudHealth		Blur		"0"			Deaccel	0.1		2.0
-	
-	Animate HudHealth TextColor		"BrightFg"	Linear	0.0		0.1
-	Animate HudHealth	TextColor		"FgColor"		Deaccel	0.1		1.2
-}
-
-event SuitDamageTaken
-{
-	Animate HudSuit		FgColor	"BrightFg"	Linear	0.0		0.25
-	Animate HudSuit		FgColor	"FgColor"		Linear	0.3		0.75
-	
-	Animate HudSuit		Blur		"3"			Linear	0.0		0.1
-	Animate HudSuit		Blur		"0"			Deaccel	0.1		2.0
-	
-	Animate HudSuit		TextColor	"BrightFg"	Linear	0.0		0.1
-	Animate HudSuit		TextColor	"FgColor"		Deaccel	0.1		1.2
-}
-
-// health has been damaged to below 20%
-event HealthLow
-{
-	StopEvent HealthDamageTaken	0.0
-	StopEvent HealthPulse	0.0
-	StopEvent HealthLoop	0.0	
-	
-	Animate HudHealth	BgColor		"DamagedBg"		Linear	0.0		0.1
-	Animate HudHealth	BgColor		"BgColor"		Deaccel	0.1		1.75
-	
-	Animate HudHealth	FgColor		"BrightFg"	Linear	0.0		0.2
-	Animate HudHealth	FgColor		"DamagedFg"		Linear	0.2		1.2
-	
-	Animate HudHealth TextColor		"BrightFg"	Linear	0.0		0.1
-	Animate HudHealth	TextColor		"DamagedFg"		Linear	0.1		1.2
-	
-	Animate HudHealth		Blur		"5"			Linear	0.0		0.1
-	Animate HudHealth		Blur		"3"			Deaccel	0.1		0.9
-
-	RunEvent HealthPulse	1.0
-}
-
-event HealthPulse
-{
-	Animate HudHealth		Blur		"5"			Linear	0.0		0.1
-	Animate HudHealth		Blur		"2"			Deaccel	0.1		0.8
-	Animate HudHealth		TextColor	"BrightDamagedFg"	Linear	0.0		0.1
-	Animate HudHealth		TextColor	"DamagedFg"		Deaccel	0.1		0.8
-	Animate HudHealth		BgColor	"100 0 0 80"		Linear	0.0		0.1
-	Animate HudHealth		BgColor	"BgColor"		Deaccel	0.1		0.8
-
-	RunEvent HealthLoop	0.8
-}
-
-// call to loop HealthPulse
-event HealthLoop
-{
-	RunEvent HealthPulse 0.0
-}
-
-
-// suit armor has been damaged to below 20%
-event SuitArmorLow
-{
-	StopEvent SuitDamageTaken 0.0
-	StopEvent SuitPulse	0.0
-	StopEvent SuitLoop	0.0
-
-//	removing this effect -- matching it to the event for normal suit damage
-//	so, there will be no special indication (redness, flashing)
-//	in the hud that the suit armor is low
-	
-//	Animate HudSuit	BgColor		"DamagedBg"		Linear	0.0		0.1
-//	Animate HudSuit	BgColor		"BgColor"		Deaccel	0.1		1.75
-	
-	Animate HudSuit		FgColor	"BrightFg"	Linear	0.0		0.25
-	Animate HudSuit		FgColor	"FgColor"		Linear	0.3		0.75
-	
-	Animate HudSuit		Blur		"3"			Linear	0.0		0.1
-	Animate HudSuit		Blur		"0"			Deaccel	0.1		2.0
-	
-	Animate HudSuit		TextColor	"BrightFg"	Linear	0.0		0.1
-	Animate HudSuit		TextColor	"FgColor"		Deaccel	0.1		1.2
-	
-//	RunEvent SuitPulse	1.0
-}
-
-event SuitPulse
-//	this even no longer gets called
-{
-	Animate HudSuit		Blur		"5"			Linear	0.0		0.1
-	Animate HudSuit		Blur		"2"			Deaccel	0.1		0.8
-	Animate HudSuit		TextColor	"BrightDamagedFg"	Linear	0.0		0.1
-	Animate HudSuit		TextColor	"DamagedFg"		Deaccel	0.1		0.8
-	Animate HudSuit		BgColor	"100 0 0 80"	Linear	0.0		0.1
-	Animate HudSuit		BgColor	"BgColor"		Deaccel	0.1		0.8
-	RunEvent SuitLoop	0.8
-}
-
-event SuitLoop
-{
-//	this event no longer gets called
-	RunEvent SuitPulse 0.0
-}
-
-// ammo has been picked up
-event AmmoIncreased
-{
-	Animate HudAmmo		FgColor	"BrightFg"		Linear	0.0	0.15
-	Animate HudAmmo		FgColor	"FgColor"		Deaccel	0.15	1.5
-	Animate HudAmmo		Blur		"5"			Linear	0.0	0.0 
-	Animate HudAmmo		Blur		"0"			Accel		0.01	1.5 
-}
-
-// ammo has been decreased, but there is still some remaining
-event AmmoDecreased
-{
-	StopEvent AmmoIncreased	0.0
-	
-	Animate HudAmmo		Blur		"7"			Linear	0.0	0.0
-	Animate HudAmmo		Blur		"0"			Deaccel	0.1	1.5
-	
-	Animate HudAmmo		TextColor	"BrightFg"		Linear	0.0	0.1
-	Animate HudAmmo		TextColor	"FgColor"		Deaccel	0.1	0.75
-}
-
-// primary ammo is zero
-event AmmoEmpty
-{
-	Animate Hudammo	FgColor		"BrightDamagedFg"	Linear	0.0	0.2
-	Animate Hudammo	FgColor		"DamagedFg"		Accel		0.2	1.2		
-}
-
-// ammo2 is the total ammo for a weapon that uses clip ammo
-event Ammo2Increased
-{
-	Animate Hudammo	ammo2color		"BrightFg"		Linear	0.0	0.2
-	Animate Hudammo	ammo2color		"FgColor"		Accel		0.2	1.2		
-}
-
-// total ammo has been decreased, but there is still some remaining
-event Ammo2Decreased
-{
-	Animate Hudammo	ammo2color		"BrightFg"		Linear	0.0	0.2
-	Animate Hudammo	ammo2color		"FgColor"		Accel		0.2	1.2		
-}
-
-// total ammo is zero
-event Ammo2Empty
-{
-	Animate Hudammo	ammo2color		"BrightDamagedFg"	Linear	0.0	0.2
-	Animate Hudammo	ammo2color		"DamagedFg"		Accel		0.2	1.2		
-}
-
-event AmmoSecondaryIncreased
-{
-	Animate HudAmmoSecondary		FgColor	"BrightFg"		Linear	0.0	0.15
-	Animate HudAmmoSecondary		FgColor	"FgColor"		Deaccel	0.15	1.5
-	Animate HudAmmoSecondary		Blur		"5"			Linear	0.0	0.0 
-	Animate HudAmmoSecondary		Blur		"0"			Accel		0.01	1.5 	
-}
-
-event AmmoSecondaryDecreased
-{
-	StopEvent AmmoSecondaryIncreased	0.0
-	
-	Animate HudAmmoSecondary		Blur		"7"			Linear	0.0	0.0
-	Animate HudAmmoSecondary		Blur		"0"			Deaccel	0.1	1.5
-	
-	Animate HudAmmoSecondary		TextColor	"BrightFg"		Linear	0.0	0.1
-	Animate HudAmmoSecondary		TextColor	"FgColor"		Deaccel	0.1	0.75
-}
-
-event AmmoSecondaryEmpty
-{
-	Animate HudAmmoSecondary		FgColor		"BrightDamagedFg"	Linear	0.0	0.2
-	Animate HudAmmoSecondary		FgColor		"DamagedFg"		Accel		0.2	1.2
-	Animate HudAmmoSecondary		Blur		"7"			Linear	0.0	0.0
-	Animate HudAmmoSecondary		Blur		"0"			Deaccel	0.1	1.5
-
-}
-
-// current weapon has been changed
-event WeaponChanged
-{
-	Animate HudAmmo		BgColor		"250 220 0 80"	Linear	0.0		0.1
-	Animate HudAmmo		BgColor		"BgColor"		Deaccel	0.1		1.0
-	Animate HudAmmo		FgColor		"BrightFg"		Linear	0.0		0.1
-	Animate HudAmmo		FgColor		"FgColor"		Linear	0.2		1.5
-}
-
-// ran if we just changed to a weapon that needs clip ammo
-event WeaponUsesClips	[$WIN32]
-{
-	Animate HudAmmo		Position	"r150 432"	Deaccel	0.0		0.4
-	Animate HudAmmo		Size		"132 36"	Deaccel	0.0		0.4
-}
-event WeaponUsesClips	[$X360]
-{
-	Animate HudAmmo		Position	"r208 416"	Deaccel	0.001	0.4
-	Animate HudAmmo		Size		"160 36"	Deaccel	0.0		0.4
-}
-
-// ran if we just changed to a weapon that does not use clip ammo
-event WeaponDoesNotUseClips	[$WIN32]
-{
-	Animate HudAmmo		Position	"r118 432"	Deaccel	0.0		0.4
-	Animate HudAmmo		Size		"100 36"	Deaccel	0.0		0.4
-}
-event WeaponDoesNotUseClips	[$X360]
-{
-	Animate HudAmmo		Position	"r175 416"	Deaccel	0.0		0.4
-	Animate HudAmmo		Size		"125 36"	Deaccel	0.0		0.4
-}
-
-event WeaponUsesSecondaryAmmo
-{
-	StopAnimation 	HudAmmo Position 0.0
-	StopAnimation 	HudAmmo Size 0.0
-	StopPanelAnimations HudAmmoSecondary 0.0
-	//StopPanelAnimations HudAmmo 0.0
-
-	Animate HudAmmoSecondary	BgColor		"250 220 0 60"	Linear	0.0		0.1
-	Animate HudAmmoSecondary	BgColor		"BgColor"		Deaccel	0.1		1.0
-	Animate HudAmmoSecondary	FgColor		"BrightFg"	Linear	0.0		0.1
-	Animate HudAmmoSecondary	FgColor		"FgColor"		Linear	0.2		1.5
-	Animate HudAmmoSecondary	Alpha		255		Linear	0.0		0.1
-
-	Animate HudAmmo		Position	"r222 432"	Deaccel	0.0		0.5	[$WIN32]
-	Animate HudAmmo		Size		"132 36"	Deaccel	0.0		0.4	[$WIN32]
-	Animate HudAmmo		Position	"r279 416"	Deaccel	0.0		0.5	[$X360]
-	Animate HudAmmo		Size		"155 36"	Deaccel	0.0		0.4	[$X360]
-}
-
-event WeaponDoesNotUseSecondaryAmmo
-{
-	StopPanelAnimations	HudAmmoSecondary 	0.0
-	Animate HudAmmoSecondary	FgColor		"0 0 0 0"	Linear	0.0		0.4
-	Animate HudAmmoSecondary	BgColor		"0 0 0 0"	Linear	0.0		0.4
-	Animate HudAmmoSecondary	Alpha		0		Linear	0.0		0.1
-}
-
-// ammo has been picked up
-event AmmoPistolIncreased
-{
-	Animate HudHLVRAmmoPistol		FgColor	"BrightFg"		Linear	0.0	0.15
-	Animate HudHLVRAmmoPistol		FgColor	"FgColor"		Deaccel	0.15	1.5
-	Animate HudHLVRAmmoPistol		Blur		"5"			Linear	0.0	0.0 
-	Animate HudHLVRAmmoPistol		Blur		"0"			Accel		0.01	1.5 
-}
-
-// ammo has been decreased, but there is still some remaining
-event AmmoPistolDecreased
-{
-	StopEvent AmmoPistolIncreased	0.0
-	
-	Animate HudHLVRAmmoPistol		Blur		"7"			Linear	0.0	0.0
-	Animate HudHLVRAmmoPistol		Blur		"0"			Deaccel	0.1	1.5
-	
-	Animate HudHLVRAmmoPistol		TextColor	"BrightFg"		Linear	0.0	0.1
-	Animate HudHLVRAmmoPistol		TextColor	"FgColor"		Deaccel	0.1	0.75
-}
-
-// primary ammo is zero
-event AmmoPistolEmpty
-{
-	Animate HudHLVRAmmoPistol	FgColor		"BrightDamagedFg"	Linear	0.0	0.2
-	Animate HudHLVRAmmoPistol	FgColor		"DamagedFg"		Accel		0.2	1.2		
-}
-
-// ammo2 is the total ammo for a weapon that uses clip ammo
-event Ammo2PistolIncreased
-{
-	Animate HudHLVRAmmoPistol	ammo2color		"BrightFg"		Linear	0.0	0.2
-	Animate HudHLVRAmmoPistol	ammo2color		"FgColor"		Accel		0.2	1.2		
-}
-
-// total ammo has been decreased, but there is still some remaining
-event Ammo2PistolDecreased
-{
-	Animate HudHLVRAmmoPistol	ammo2color		"BrightFg"		Linear	0.0	0.2
-	Animate HudHLVRAmmoPistol	ammo2color		"FgColor"		Accel		0.2	1.2		
-}
-
-// total ammo is zero
-event Ammo2PistolEmpty
-{
-	Animate HudHLVRAmmoPistol	ammo2color		"BrightDamagedFg"	Linear	0.0	0.2
-	Animate HudHLVRAmmoPistol	ammo2color		"DamagedFg"		Accel		0.2	1.2		
-}
-
-// ammo has been picked up
-event AmmoShotgunIncreased
-{
-	Animate HudHLVRAmmoShotgun		FgColor	"BrightFg"		Linear	0.0	0.15
-	Animate HudHLVRAmmoShotgun		FgColor	"FgColor"		Deaccel	0.15	1.5
-	Animate HudHLVRAmmoShotgun		Blur		"5"			Linear	0.0	0.0 
-	Animate HudHLVRAmmoShotgun		Blur		"0"			Accel		0.01	1.5 
-}
-
-// ammo has been decreased, but there is still some remaining
-event AmmoShotgunDecreased
-{
-	StopEvent AmmoShotgunIncreased	0.0
-	
-	Animate HudHLVRAmmoShotgun		Blur		"7"			Linear	0.0	0.0
-	Animate HudHLVRAmmoShotgun		Blur		"0"			Deaccel	0.1	1.5
-	
-	Animate HudHLVRAmmoShotgun		TextColor	"BrightFg"		Linear	0.0	0.1
-	Animate HudHLVRAmmoShotgun		TextColor	"FgColor"		Deaccel	0.1	0.75
-}
-
-// primary ammo is zero
-event AmmoShotgunEmpty
-{
-	Animate HudHLVRAmmoShotgun	FgColor		"BrightDamagedFg"	Linear	0.0	0.2
-	Animate HudHLVRAmmoShotgun	FgColor		"DamagedFg"		Accel		0.2	1.2		
-}
-
-// ammo2 is the total ammo for a weapon that uses clip ammo
-event Ammo2ShotgunIncreased
-{
-	Animate HudHLVRAmmoShotgun	ammo2color		"BrightFg"		Linear	0.0	0.2
-	Animate HudHLVRAmmoShotgun	ammo2color		"FgColor"		Accel		0.2	1.2		
-}
-
-// total ammo has been decreased, but there is still some remaining
-event Ammo2ShotgunDecreased
-{
-	Animate HudHLVRAmmoShotgun	ammo2color		"BrightFg"		Linear	0.0	0.2
-	Animate HudHLVRAmmoShotgun	ammo2color		"FgColor"		Accel		0.2	1.2		
-}
-
-// total ammo is zero
-event Ammo2ShotgunEmpty
-{
-	Animate HudHLVRAmmoShotgun	ammo2color		"BrightDamagedFg"	Linear	0.0	0.2
-	Animate HudHLVRAmmoShotgun	ammo2color		"DamagedFg"		Accel		0.2	1.2		
-}
-
-// ammo has been picked up
-event AmmoRapidfireIncreased
-{
-	Animate HudHLVRAmmoRapidfire		FgColor	"BrightFg"		Linear	0.0	0.15
-	Animate HudHLVRAmmoRapidfire		FgColor	"FgColor"		Deaccel	0.15	1.5
-	Animate HudHLVRAmmoRapidfire		Blur		"5"			Linear	0.0	0.0 
-	Animate HudHLVRAmmoRapidfire		Blur		"0"			Accel		0.01	1.5 
-}
-
-// ammo has been decreased, but there is still some remaining
-event AmmoRapidfireDecreased
-{
-	StopEvent AmmoRapidfireIncreased	0.0
-	
-	Animate HudHLVRAmmoRapidfire		Blur		"7"			Linear	0.0	0.0
-	Animate HudHLVRAmmoRapidfire		Blur		"0"			Deaccel	0.1	1.5
-	
-	Animate HudHLVRAmmoRapidfire		TextColor	"BrightFg"		Linear	0.0	0.1
-	Animate HudHLVRAmmoRapidfire		TextColor	"FgColor"		Deaccel	0.1	0.75
-}
-
-// primary ammo is zero
-event AmmoRapidfireEmpty
-{
-	Animate HudHLVRAmmoRapidfire	FgColor		"BrightDamagedFg"	Linear	0.0	0.2
-	Animate HudHLVRAmmoRapidfire	FgColor		"DamagedFg"		Accel		0.2	1.2		
-}
-
-// ammo2 is the total ammo for a weapon that uses clip ammo
-event Ammo2RapidfireIncreased
-{
-	Animate HudHLVRAmmoRapidfire	ammo2color		"BrightFg"		Linear	0.0	0.2
-	Animate HudHLVRAmmoRapidfire	ammo2color		"FgColor"		Accel		0.2	1.2		
-}
-
-// total ammo has been decreased, but there is still some remaining
-event Ammo2RapidfireDecreased
-{
-	Animate HudHLVRAmmoRapidfire	ammo2color		"BrightFg"		Linear	0.0	0.2
-	Animate HudHLVRAmmoRapidfire	ammo2color		"FgColor"		Accel		0.2	1.2		
-}
-
-// total ammo is zero
-event Ammo2RapidfireEmpty
-{
-	Animate HudHLVRAmmoRapidfire	ammo2color		"BrightDamagedFg"	Linear	0.0	0.2
-	Animate HudHLVRAmmoRapidfire	ammo2color		"DamagedFg"		Accel		0.2	1.2		
-}
-
-event CraneMagnetFlash
-{
-	Animate HudCraneMagnet TextColor	"255 220 0 255"	Linear 0.0 0.1
-	Animate HudCraneMagnet TextColor	"255 220 0 160"	Deaccel 0.1 0.3
-	Animate HudCraneMagnet TextColor	"255 170 0 220"	Deaccel 0.4 0.3
-	Animate HudCraneMagnet TextColor	"255 220 0 255"	Linear 0.8 0.2
-}
-
-event HintMessageShow
-{
-	StopPanelAnimations HudHintDisplay	0.0
-
-	Animate HudHintDisplay HintSize	"1"		Deaccel 0.0	0.3
-	Animate HudHintDisplay FgColor	"FgColor" 	Linear 0.4      0.4
-
-	// flash text
-	Animate HudHintDisplay FgColor	"FgColor" 	Linear 1.5 0.01
-	Animate HudHintDisplay FgColor	"255 220 0 255" Linear 2.0 0.2
-	Animate HudHintDisplay FgColor	"FgColor" 	Linear 2.2 0.2
-	Animate HudHintDisplay FgColor	"255 220 0 255" Linear 3.0 0.2
-	Animate HudHintDisplay FgColor	"FgColor" 	Linear 3.2 0.2
-
-	// hide the panel after a while	
-	Animate HudHintDisplay FgColor	"255 220 0 0"   Linear  10.0 	0.2
-	Animate HudHintDisplay HintSize	"0"		Deaccel 10.2	0.3
-}
-
-
-event HintMessageHide
-{
-	Animate HudHintDisplay FgColor	"255 220 0 0"   Linear  0.0 	0.2
-	Animate HudHintDisplay HintSize	"0"		Deaccel 0.2	0.3
-}
-
-event KeyHintMessageShow
-{
-	StopPanelAnimations HudHintKeyDisplay	0.0
-
-	// show the hints
-	Animate HudHintKeyDisplay Alpha	255 Linear 0.0 0.5
-
-	// flash text
-	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 0.0 0.01
-	Animate HudHintKeyDisplay FgColor	"255 220 0 255" Linear 0.5 0.2
-	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 0.7 0.2
-	Animate HudHintKeyDisplay FgColor	"255 220 0 255" Linear 1.5 0.2
-	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 1.7 0.2
-
-	// hide the panel after a while	
-	Animate HudHintKeyDisplay Alpha	0 Linear 12.0 1.0
-}
-
-event KeyHintMessageHide
-{
-	Animate HudHintKeyDisplay Alpha	0 Linear 0.0 0.5
-}
-
-
-event SquadMemberAdded
-{
-	StopEvent	SquadMemberDied		0.0
-	StopEvent	SquadMemberLeft		0.0
-
-	// add in the squad member, brighter then normal color
-	Animate HudSquadStatus LastMemberColor	"255 220 0 255" Linear 0.0 0.3
-	Animate HudSquadStatus LastMemberColor	"255 220 0 160" Linear 0.3 0.3
-}
-
-event SquadMemberLeft
-{
-	StopEvent	SquadMemberDied		0.0
-	StopEvent	SquadMemberAdded	0.0
-
-	// fade out the icon
-	Animate HudSquadStatus LastMemberColor	"255 220 0 0"	Linear 0.0 0.5
-}
-
-event SquadMemberDied
-{
-	StopEvent	SquadMemberAdded	0.0
-	StopEvent	SquadMemberLeft		0.0
-
-	// flash red, hold, then disappear
-	Animate HudSquadStatus	LastMemberColor	"255 0 0 255"	Linear 0.0 0.5
-	Animate HudSquadStatus	LastMemberColor	"255 0 0 0"		Linear 2.0 2.0
-}
-
-event SquadMembersFollowing
-{
-	StopEvent	SquadMembersStationed	0.0
-	Animate		HudSquadStatus	SquadTextColor	"255 220 0 255"		Linear 0.0 0.2
-	Animate		HudSquadStatus	SquadTextColor	"255 220 0 160"		Linear 0.2 0.4
-}
-
-event SquadMembersStationed
-{
-	StopEvent	SquadMembersFollowing	0.0
-	Animate		HudSquadStatus	SquadTextColor	"255 220 0 160"			Linear 0.5 0.5
-}
-
-event PoisonDamageTaken
-{
-	Animate 	HudPoisonDamageIndicator 	Alpha	255 Linear 0.0 1.0
-	RunEvent PoisonLoop	0.0
-}
-
-event PoisonDamageCured
-{
-	StopEvent 	PoisonDamageTaken	0.0
-	StopEvent 	PoisonLoop		0.0
-	StopEvent 	PoisonPulse		0.0
-	Animate 	HudPoisonDamageIndicator 	Alpha	0 Linear 0.0 1.0
-}
-
-event PoisonPulse
-{
-	Animate HudPoisonDamageIndicator	TextColor	"BrightFg"		Linear	0.0		0.1
-	Animate HudPoisonDamageIndicator	TextColor	"FgColor"		Deaccel	0.1		0.8
-	Animate HudPoisonDamageIndicator	BgColor		"100 0 0 80"		Linear	0.0		0.1
-	Animate HudPoisonDamageIndicator	BgColor		"BgColor"		Deaccel	0.1		0.8
-
-	RunEvent PoisonLoop	0.8
-}
-
-// call to loop PoisonLoop
-event PoisonLoop
-{
-	RunEvent PoisonPulse 0.0
-}
-
-// Commentary hud element
-event ShowCommentary
-{
-	StopEvent	HideCommentary 0.0
-	Animate 	HudCommentary 	Alpha	255 Linear 0.0 0.5
-}
-
-event HideCommentary
-{
-	StopEvent	ShowCommentary 0.0
-	Animate 	HudCommentary 	Alpha	0 Linear 0.0 0.5
-}
-
-NE          REDI      DATA   .D  P              ê                                      †                         5   Q>>   soundevents/soundevents_weapons.vsndevts source2mod_template       $           ___OverrideInputData___ BinaryBlobArg          IsChildResource         3VK|tÈòFØÚÊ>µê7Á       ◊  B  |: qF  E  @	    Û
-                  $ S
-    Û                     H  T ”           (  \ \   S   h   Û                !  Û"   #   $   %   &   '   (   )@ S*   +¿ P ,T -X  † ◊.   /   0   1L W2   3X 4(@S5   6ÿ 7ÿ   ”8   9   :   ;4 <D = õ>   ?   @$  ﬂA   B   C   D< (Eà  Ñ F   SG   H Û6I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z` Û[   \   ]   ^   _§ S`   a§ ”b   c   d   e Óf   g   h   i ( j <h HÃI l k¥0  T Sl   m4 Wn   o‡ kÃ  HÛp   q   r   s   t‘   Ûu   v   w   x   y   z Û{   |   }   ~   ¯   ˜Ä   Å   Ç   É   Ñ   Ö\\
-\_Ü   á( à(  ` ˇâ   ä   ã   å   ç   é8   ˇè   ê   ë   í   ì4   ﬂî   ï   ñ   ó0 ﬂò   ô   ö   õ0 úÙ _ù   û(   ﬂü   †   °   ¢à   _£   §X ”•   ¶   ß   ®` 0 © l S™   ´$W¨   ≠( X . Ñ _Æ   Ø, _∞   ±, _≤   ≥, _¥   µ, _∂   ∑\n∏   π \∫X Wª   ºåΩ4 ú¨ˇæ   ø   ¿   ¡   ¬ƒ 8 ˇ√   ƒ   ≈   ∆   «8 ˛»   …       À   Ã<4 ˜Õ   Œ   œ   –   —∞@º@ ¿ “ê ”` Pü‘   ’   ÷$X_◊   ÿ‹_Ÿ   ⁄, S€   ‹|  ›, ﬁl‹lﬂpî à˚
-‡   ·   ‚   „   ‰   Â   ÊåóÁ   Ë   È\Í_Î   ÏÌÏzÃÓ ˛Ô      Ò   Ú   Û ptxˇÙ   ı   ˆ   ˜   ¯   ˘D  $ S˙   ˚‰\]P◊¸   ˝   ˛   ˇP ë ¶    PÊ      P  	  
-     b  ‹ &ÿ 	ò
-n  
-Hf  »@ n  å<8 x _  8  n   6< o  D _  Ù (j   !‘*"0 df#  $|*%@	/$x\
-%	¯p	 “  (  )  *l	«  ,  -  .|‚/  0  1  2d	Ëˇ  4  5  6  7ÿ 7ÿ L@Ã H¿ P¥ X^  <$"=$">$"?$.@$.A‘l&fB  Cx.A$ "Dl$ 	_F  G$ _H  I$ _J  K$ "L &M»=»,pJ"NH oO  P< xTt >t p Ë?Ël‰mÙL @, L ﬂP &m   H LQî @ RÙ î º"S( . @ Q@ & H WT  U.R$ nV  WúU8R(XX‡P◊Y  Z  [  \‡◊]  ^  _  `‡◊a  b  c  d‡–e  f  g  h ÿ iÿ PPj  kåG  mÿ ◊n  o  p  qÿ ◊r  s  t  uÿ –v  w  x  y0 < {¿{Ë P◊|  }  ~  Ë ◊Ä  Å  Ç  ÉË ◊Ñ  Ö  Ü  áË ˇà  â  ä  ã  å »í  é  è /ê4_ë  í( oì  î‹[ï  ñ`	5Ã8 _ó  òH	5h_ô  ö4 _õ  ú4 ^ù  ûh	@dd	[ü  †d	<`	_°  ¢, _£  §, _•  ¶, _ß  ®, ©@P, ´@
-`è  ≠  Æ` SØ  ∞ƒ,  n±  ≤lÙ≤ÙﬁlTÊ≥  ¥  µ  ∂◊∑  ∏  π  ∫ ◊ª  º  Ω  æ˛ø  ¿  ¡  ¬  √	§_ƒ  ≈$ _∆  «$ _»  …$ _   À$ _Ã  Õ$ ^Œ  œ@¸[–  —\0 48 “t, _‘  ’, _÷  ◊, _ÿ  Ÿ_⁄  €_‹  ›0 _ﬁ  ﬂ0 [‡  ·,0 .´4 W‚  „d ©Tp	ﬂh	"™ X ¨l` oÊ  Áÿ^Ë  È† ‘4 WÍ  Î$0Î0HÏt Ï<ÏÓ lO  ¨_Ò  Ú†î∏t(WÙ  ıp.Û$ Wˆ  ˜$ .Â$ S¯  ˘º	<($ "˙Ñ<êm ﬁtÊd\˚\¸\˝\_˛  ˇˇD`( ˘ ¶    (Ê      (Ê  	  
-  (˙        åÿ   nîƒ\ˇ        @_à@ ¨ .Ù	*|÷      P  <G  ‹Ê     !  "ˆ#  $  %  &  '0/– /(h)0 Ë/*®+/+ÿP,  -t( @ˆ.  /  0  1  2  3  4  5‘Ãn6  7àb8  9Ï Ñl å ":.ﬂ ` X n;  << _=  >< $_?  @< $_A  B< $_C  D< $_E  F< $G< $_I  J<  ˇ  L  M  N  OÑ $oP  Q∏_R  S( nT  U‰ †.V†oW  X¨/X¨W◊Y  Z  [  \Á]  ^  _  ` «  b  c  d–e  f  g  hT4/i4K◊j  k  l  mÿ nTó  p  q «  s  t  uÿ –v  w  x  y0 å,&{$$ Ë|Ï4|4ﬁL(8#ˆ}  ~    Ä  Å8#ˆÇ  É  Ñ  Ö  Ü8#ˆá  à  â  ä  ã8#˚å  ç  é  è  ê  ëò ò
-¨Ûí  ì  î  ï  ñ  ó@L ﬁP @_ò  ô@ (Sö  õ "< å ®oú  ù–Pû  üL
-ê ò S†  °@"< T å/´¨L n¢  £®"ü4&°®§ÿ	»œ  ¶  ß  ®P©| |&/´h'ß¨Ï ≠Ï ®Æº ®Øº ®/∞®!+±§/≤Ï√≥¿¸/¥ 'µ¨'O  ∑à_∏  π( n∫  ªåﬁ‹'˛º  Ω  æ  ø  ¿Tîå _¡  ¬Ù/¬‰K\&«  ƒ  ≈  ∆Ù◊«  »  …   Ù◊À  Ã  Õ  ŒÙˇœ  –  —  “  ”ÿ ”ÿ P◊‘  ’  ÷  ◊ÿ ◊ÿ  Ÿ  ⁄  €ÿ ◊‹  ›  ﬁ  ﬂÿ Ú‡  ·  ‚  „  ‰‡.<» ÿ MÂ(<ﬁPh 	t*$ ˆ  Á  Ë  È  Í  Îx,úOÏT Ï¨ ÄÉ  Ô  º<˜  Ú  Û  Ù  ıpÛˆ  ˜  ¯  ˘  ˙ƒlÛ  ¸  ˝  ˛  ˇIº®&hÎ§#<å48
-Ñ<
-w í    @"< d X 0 "à , | TT ü    	T (Ä&
-–b  ËT 4 	Ã@  à  hˇ	            T                     @& @M®Sò»ƒ¥ ∏ﬁ¥ . ®¶!  "  #®¢$  %  &x%ñ  (  )º‚*  +  ,  -¸<h ‡ 	Ã ﬁ–ò24 – D Zà%‡ Ã4@(&1&2@(b3  4¨¯do5  6ƒÊòÁà(< _7  8< $j9  :`0 0/;l-/<D ¯&à –ì=  >  ?Th	ƒ@ ˇ
-@  A  B  C  D  E  F@ " 0 GTZ  I$x"D KÄ( ‹ ØL  M  ND
-' P O@ (ŒT)@ (ÃÑ(@ ( Ñ(Ï88H  Ñ"Sà (_T  U@ (_V  W@ ( <"X@ (_Y  Z@ (W[  \à.MàD &]†+"^†+ _P <`‡ (_a  b@ (_c  d@ (_e  f@ (_g  h(,R  j$(kê (_l  m∏0_n  oÿ 0ﬂp  q  r  sP ,D:è  u  vú,wú,x@ (yÑ@ (_{  |‘,}$0_~  ‹,Ä\,Å@ (_Ç  É@ (_Ñ  Ö@ (_Ü  á 	|	O  âÙ,ä@ (^ã  å@ 8"çÄ-à-|,P –-è‹ (_ê  ë0 H íà (_ì  îà 0ìHà (_ñ  óà 0 H òà (_ô  ö@ (_õ  ú@ (_ù  û0 H üÄà 	‰_†  °_¢  £H0ˇ§  •  ¶  ß  ®0(_©  ™@ (_´  ¨@ (_≠  Æ@ (_Ø  ∞Ä_±  ≤, _≥  ¥, _µ  ∂, P∑  ∏ 8-¯ _π  ∫H 0_ª  ºH 0PΩ  æ§H Ä"_ø  ¿Ù,¡Ù  ¬Ë 0_√  ƒH 0W≈  ∆0M‹Ë «Ë   »P(_…   @ ,À<,Ã<,Õ 0 82Œà $Ëœ  –  —  “– (_”  ‘– 0_’  ÷H 0_◊  ÿ4Ÿê 0_⁄  €`(  ‹@ ,›@ ( 8ﬁË,ﬂ   ‡h,·ê ,‚ê   „ê ( p‰@ ( hÂ`<Ê‡,Á‡,Ë@ (_È  Í@ ,Î∏0_Ï  ÌH 4Ó§0üÔ    Ò$D Úê 0üÛ  Ù  ıL 0üˆ  ˜  ¯0ﬂ˘  ˙  ˚  ¸P <˝ò(_˛  ˇ@ ,/ (+&(  /‡/o  p'Ô      à+/	å/
-Ñ O  å (_  @ (⁄‡D@ (_  @ (_  @ (_  \0_  H 0_  H 0_  d0ü    L 0™     !`%¿Ë o"  #‡‹!G  %4 †0 NÑ:S&  'ê (L(ﬂ)  *  +  ,¿(_-  .@ (_/  0» (ﬂ1  2  3  4à (_5  6d0ü7  8  9T,:Ã ,;Ä ,<@ ,=@ (_>  ?Ñ0_@  A‘0"BL C,Dî(Ï^∏#  å3ô +…ø ? @@43 @Î?gf ÷  „  @ È@ 4¿r@ 	 " ‡ 2@@ ü 2pó@8 ¢ "@Ø " ú 2à≥@H n ∏ ê ”p Òp $@– h @  ÕÃ $‹? ®  X · – "@Ú ŸË  P Ÿ0 ` 
-h @    ¨©ø∫ÖÎQ∏û?‡ ¿ Ï ÿh	®p
-`„‡$b@Ë ∞ m
-Ä –Ûhò 	( %pó8‡ÓÇË /Ë?h É|ÆG·zîø # i í` â¿*ÄQ * ú0* 4 / h DàÈ¯ èh# @ÊXßò / @(   
-ò”  ¯ 	® h–)πø 4Pî@ 	 +0ë0)ô@@¯ Ÿ∏  ê uÀ2êgw uàŸŒ˜SÒ 
-  $? u‡OçónÕ 0 	êHXê	à*@o0 P ( %@ †–    yx¿  ‡ (¯0 » 	8 	` È† 
- –ê,È?¯ H  	0( I0 @
-¿0 H?`–8 / Y¿ ∏  Ä 
-H † 	 8∏ 	* @Ä…ÿ.¿íàXaê	8Ixê	
-x	Ê 8 $@†
- ix 
-ê	·   @ - 
- 0 †∏	cÄ 8
-s∞
- 	h
-H  
-0 > K@ (¿π∏ 
-ÿ$®
- ^X ò]p ˇI0ÄKub9ÔˇcÓ	@	ŸÄ8`- Ë¯∞	ò 
-… Ë x. â¯Ë $	PËÒ 
-¿
-?@8∞ RPà 
-(‡@»2ê /X@ X 
-¯,‡?P/‡?@ + 	 Ë@>‡•@ @.pß PP8pê	/^@8ËhBÄ 
-∞	 Úh``x 
-:Äa@ ÉçàbÚò©ø ç?ã(&oÄô·X 0 ,T@ 	X*@`h -¿R »\sGˇÀÏ |H¨≈ß òÈ®
-P/ÄaÄ 	 0 p ( Ä  à x p 
-®#¿ø @H (¿#ôø HÔ®Z® P 0 #√ø hV– ê `  P@ x Ëp‰ XP 
-x® ∏}yd¨6ˇ/„   ıH }ﬂ¡à}(Ãò ~Ω7Ü ‡⁄	Ë0 H @ 	8 /@Z8  ( {3∏Êé˛ó…à   h 	†%@Z X ∞π®ê Ÿ  Ä
-ê†‡ò  ( à¿
-Ë¿òÉÏQ∏ÖÎ°ø ú?>
-◊£p=?h` †
-( Ç]KiˇÉÎ?†	#éø Ö?ÿ£p=
-◊Ô† x  Ì(–` ‡5\‡ „ê‡%∏% ∞  ∞  áÎ	 Ô® Ë  "/¿R  ê »	à	®p}zo¿Ìh˜(\è¬ıÏ∞6 %–¯#≥ø  ?G‡( X 
-x( Ä 2% Tÿ#ôø ç?•Ã&¿0Ôê 	p@  ¿ x	PøXÿ8 ‹pò 
-†  TH ê ` ®	Ä
-/ÄV( P– ÚBullets.DefaultNearmiss type hlvr_d £_3d volume ˇ _rand_min pitch Ú0ax chance_to_play use_hrtf mixgroup Weapons vsnd_files sounds/w !/b• ∞_passby_01.+ % 2% 3% 4% 5% 6% 7% ÚCombat.PlayerKilledNPCìÒstart_multi_dista de_\ èevent_01E a_Childä"01R 2d_w_occlusion LoudEE ãÚ damage/last_hit§ D BNPC.GL – 2 f wtrack_1 2Em[1 2
-+_1Å 	] L_npc( 2( 3( 4( 5( 6( !%25 
-˝±W_Mechó3â3W 
-Omech}) 2) 3) 4) ]gling43Dreak˚ qfalloffÀr_scale 6]ImpacbE í     ´˛HeadCrab.Gib baseƒExtra_Gore block_durat«  maêQthis_	 oentityued Ogorep3 23 3≤Ó q_Subtle'Antlion.Abdomen_Hit_Success BaseExplo…ÄEffect.Sä Øe !s ê#s  ˛direct_mix_level+˙ T-id"  †:  ;  ß$ >lfe;  :   " 2t=  A    RxfadeÇ êend enablåìbug_radiu'0nam6 Ùring initial_mufflπ4max N Éin_time  Chold ) =out  ™Eval ˜^âÑÅgas_can/ı_ j- 
-2- 3ë‰= ?swtõ 1 21 £ WÒ.GasCan Grenade. ’de limiter_on î   f Ωstop_oldest£ ] S/wpn_ _Ø ~digital9 29 %39 %49 %59 Ohead6 26 "36 "46 "5ù ÍE Oboom6 26 "36 "46 "+ Ø?risG 8 28 $38 $48 $ÆActivat7a, %Ú
-EnergyPistol.ConnectClip m’[ e6 !_p7 0/ebP ˛ncrew_ir7 27 #37 #47 #5:ìS û7$? 2? +3? +4ı
-/Po] UoB  2B .3‰ _Laser„  l8 ‚ )A 2A -‡ Ÿ IFire l c ?fir~üSmallShot¿  0 N_shoG
-9 29 %
-èhargeLED1c1 ^_ledsíR  dB0 T  
-g9 29 %pˆ	Á¬2 Jeep.Gauss2 €#2 G  ó_Inser
- —_foley_clip_i6 P @ReleéQ r7 R oseSlidQ  5  _s6 P ONeedO  neMO _oAmmoL lo_ammoH ì OLockK ë ≤
-N  _tˆíChamberedz F\ernale ^  ÷b ñnear_emptUCAlyx`  ¶ ù/ax[ ’É3 23 33 4Û OBodyG >bodè3 23 33 ‡ ?LFEF .lf
-2 22 32 € ŒF æ3 23 33 ‡ 9Old˙3 4˜3 4= y.bay0hl1vss( _kÌAddonButtonPusdF b" Yclick? PBurst¡  Sw¢? !ri’rullautoM _òpT	B_gunÂs•@ambi∑ducking_pctrÙ¨ Ê##  h"<  <   $ Ntail<  <   Å memory_≠Äpreload_/	Ô¢  v  J ùÖ 63 23 33 6üHopperLoaI h, ?_loµ	5 25 !35 !45 !5èCompleteS c6 ?/DrK1dryU O~í7 27 #37 #47 Ô‹ 7 27 #37 #‹  Ü€ 6 26 "36 "ÿ IŸ 7 27 #37 #˙ÉCarryingºpy*/
- £| acommonp pdenysel9ú"’ine.Flashbang| Â0d_swcA $_fA g ’r !*01w C( ÅShieldUpWi +sL ?_upm ODownc ,Odowne &Lp¸	  ÔÇ ,lÂ …Prepareb %_windu_ @Ring£force_fromƒ	q  "_rQ r 'MG&
-
-
--Üx mq !mgÕ5 25 !35 !45 6 26 "36 "ÿ π5 25 !35 !‘ l!/019 %29 %39 %4ï/Lp*pd9 ›#/lp>$p
-Ù 8_Ol DH! (Mi  »  ≤ 3Int@  Z èFarShort™ pamb_far9€` ?Med^  \ OLong] .loÛ^ /Ne"/ne/Ne /ne/Ne!,ne ≈-&,´%3 4 f útest/null`! y¨ WÍ  ‹OWhinW 2w	9 M		å L‹
-S !lY  Sid se   8 38 $48 $58 ‚8 38 $48 $‡ 7 27 #37 #‡8 28 $38 $
-_ ?gunê$ 
-P  “E ,2E 13E 14E +±E &2E 13E 1,D $2D 03D 0,9E &2E 1,	`ereverbâTcurveu/ARp
-)ard .arR; "2; '3; '4; !R; 2; '3; 'Ï ": 2: &3: &Ë "Ó; 2; 'Î "	–0Phyµ0ûnon.Launc3 Ahysc! `/super !_l+ D1 21 3§,PinPull3D*Epinpµ< üHandlePop> Rspoon< 4Xen? nFizzleÆ:Tgbait ù_squeeze3? S @ ±orld/infestû66/xe+F E BR-B Oblip? ?LooC N_looH *. dIQoarticl⁄ a; s_idle_p= c ;3U ◊.®&ı HealthPen.Deplouqprops/h A_pen _ ,&>nd_H  Re:tI r0 _J OStabG  ‰(bD Fß H fßM 8/01N 2 L '2 =R 0injR8Y <pt2PC "2† 5	0ARapi∫,a.Singl_-Ol @ar2/c6 3 r$ ò¨ 	; "2; '3; '4; !	; 2; '3; 'Ï "	: 2: &3: &Ë "	; 2; '3; '4¡_, Ú  @_alt? 7 EO,ŒPowerCellDry D |,B /No? ¿¥G UCycleJ Ç 5'MpushA ?antE orotateà aAfterR0 N G ŒReplaceCapsu#E‰	œ/] ÃV r2 M PBoost2/owX Kb< !_w= c Ë?d #‹e Ib W F1nAttachC0357 H ; @Open? ?Bay"oÓí Ü1X )í1J>movG\ ÄcartridgR C _\  Ω(Z *1adv[ A ^ "usˆH#omµ@, qTagDart…#iµ$prA, /axü dÎ3b
-m _ReadyT r4 S nR µ	(@ 		#@ ]"? 	¥¶X i%F_U ÄUpgradeSP' ŸoChange" 	E©.Ÿ 9·.É ?Disb " Wc »6FBall] b38`  ﬁx ’(F €#F ·"E Á2Öb vBG .2G 33G 34G -
-.G 2G 33G 3.‡-F 2F 23F 2.NG (2G 3.ràbMb "8bouŒ	C )2C /3C /'B0CluD>˛/Ge≈/geæ+@ 2@ ,3@ ,4@ &¢#@ 2@ ,3@ , 'Ü"? 2? +3? +¸ 'j#@ 2@ ,3@ ,.Ù „;T$ YPress∂q4è%ARail§4-ç ¿B_LB cC"P 	31ver˘O<_x1 -y1$ 2$ 2$ 3$ 3$ 4$ x=0facâ2¢vol_attenuÉS ?TÀã"œZN3∞3ó*
-’53subrQu 	W+t D>N TVO>M forwardP 6 † ÇU  “S ]E.ucß ^TubeF£ 	˙ ≈>N ∑≠CQ ¨c6 R ≤ • P §OtubeN ° Q ¢  ü?SheCA7sheB< "2< (3< (4òNpeedN 2s_u¨≈Løò8X-_-tempP /UpN êmp44_boltrG8VIntakyWZZ] V_dbl_\Ÿ+Dº5 25 !35 !45 û
-5 25 !35 !‘ r
-4 24  34  – F
-5 25 !” 	%
-£	bBtau_ø&m@ '2@ ,3@ ,4@ &ô@ !2@ ,3@ , '≈? 2? +3? +¸ 'Ò@ !2@ ,3@ ,Ã I*2+"PTripmŸ?kt  ≠B ¥[; 2; '3; '4; '5; ?:  2: &3: &4: &"√[8 28 $38 $48 $Õ[: 2: &3: &] 
-’[î÷[l?eep3"9 29 %39 %49 %/
-1.I a	!(D /edF {confirm|T a…d0 L WH qYx ]QlarmS˝dÏ  0 ∫WM /LpJ 
-G è RollerM”r! _Z  
-&8 28 $3Å∂!^á1<3#er√ uMolotov† ŸUworks  πduylinder ¨ÜveBarrel  '#Frica gShrapn$ „H# Lmokeﬁ16EMPÉ ‰2]h
-öK ∏i°`EtickcuckGunÏm0_En‘RZ Â˙8 PSe< W ?xitV %;xitU EBP 6monaYC )2C /3C /4o_QuickY $BUa^ ÍV ÎA '2A -3A -4A 'ÔA "2A -3A -(Û@  2@ ,3@ , (˜A "2A -3A -4È0roj*lªZ –')	C 2C /3C /4C )/)	C 2C /3C /*7(B 2B .3B .*?)	C 2C /*E èsSo1ﬂer VortMagic.ÿ> vo„d  w  cS7 27 #37 #47 #õ"_ThrowG t0 |= 2= )3= )4= )5= #°= 2= )3= )4= )1$∆< 2< (3< (4< (,$Í= 2= )3= )4= )œ\NoHit 0Twode.   ./LpÇ 9han„Z:  2π ã @Endg≈v
-»©  Ùtgt∞ #A ∑ uEnvironú  e a e@  ÉnØs© h OThin` !m¥> 2> *3> &sá> 2> *∫ +4> *5> *6J
-V A&<&7&2&-&(&#&&>D20l N 	3d20>bﬁ	= 2= )3= #∆= 2= )∑ $
-< 2< (¥ $£	= 2= )3Ó*^VÉâ  êLightningPká è 	”â â l4 !_s5 0_thSn -E "Í D *& B *!@Midi'ÇBeepTest£JñÑ∞iagnostics/3
-ù?DenT0 +gõ0¯sB Ño.loé0Òs AAutoÂl  F. Tf vFd&¡. Ÿxa? €&? håuGunshiphåW Cfx/n  ÜNltorŸ- 	4- 5- 6- /11- &-&/13r &±FX_Ricochetá. 	Êç ºDüFuncTank.—I1 _ı  Ê gB_AR2.J I !_R]I  ër ÷ }pecial1ƒSniper c_zoomiS= 2= =out> JDoubç  Äh J âJ= S = 	öK> säµ ;b1L Pfunct
-
-kØBinocularsrb#  zL 2L âM zK :maxK @rickSè‚  ¬U ic∏S od  ˝IxEJard1H >U G ?latcU˜ê- 
-kÆZ_Guardù cg #/c∞E
-A drowbarÚ: ciceaxe _swing1? PMelee7Rflesh n¨
-‘/ 4/ 5¶ WÖU'&  Q Y, 	ú —åöinguisher	 
-	 ïe# £SB D º}G 
-Ó	 |∫ß E d 
-'PFlareë{ f  ∆/9 1	9 ®;  ˆxn9 :burÚøÚo¥Y=/ò(§X=  IR;y
-> ≤ly w
-ï$[)
-¡NMegaN g §)g  û)g N g RRh =dryi P j oPickupi p, h N g P?aws; + Ä)PR <S %/oproJ a BHold”ëf Bê:` I S ã?ZapS *Ö>zapwv4 24  34  4ÈèTooHeavyÌ@tooh. N -?nE  g´^1 /ff2 /ff3 ˜¶∞<  œ/ed¶  1v  ˇ ñA	: 2t  · Ob[!= 	3= ô= ‹Mx
-ØÑ	¨T
-? ÙAsmg1 Ú> –A| X
-< ˛= ˛∑ A 3~ yˆ !wi•Ca > 2> 	bZÅ= sÅn ≥ < 
-∞?RPG3Prpg/rÛ[6 , ã.On $ff ≤	ºö<5ˇY
-z, 2, 
-⁄÷A€D  7.ckA í
-? µ=7@ @ JAD 1 ¢ 6^ ;MG1Ø n  
-˘  y Ω1s 
-s N  wR 	ÂW 2 o C  2 ˙u3	C p	} a ˝
-_ 
-Ú`StunSt˝Ö/SwvH@tuns 
- 	,/ 
-¨u ∑M0 yf 	).hi‘2 õ RR V0 Ä 9J 4parL4% 2% 3â ÷7Ö}?ragË(Qslam/P$L 0  Ï6n?ortôm  Ê=  InÌÄ≥@ ‡- K ∫RH ægn+ 2+ z Æ_ØuBeginUs¶>357.	v^	" 
-„ V ¥4 
-2  ΩL)
-H  Ï] _
-4Ñ 'a= ¡ .Spº$4 Mspin’_ssbowNc |: 2	: 7< BoltFly=  ùI__fly4? Ÿ8fE ^	( 2n >Hit\èD _hitboi % f ∑B RNSkewèÇ
-Ë s$ E aQ_¢E Ww/ ¨( √ …¢/l	< ÚD 2 3h QStopS, Ü$|/ BµVˇ –’V1®nPBeam."06 ær√ó=?ricW
-' 2' 3ä @ottl@=7ton.GCglas !_b+ _µ•2E ?ugB€Á, 
-≤ XHomer•G==Ã  ØPathfollow8 ú g>6wir~hootRopO?) `/ropes& îà ˜<·
-8@alyxáQ Ä 2;  0Åc> 1>  Ã   Gí"PicNPCÉ kÒÅ Ò		
-		
- S
-
- "   !   
- "5 	 0	
-M  $] ? "
-& P %
- y  ≥  µ ã  ¿  	  T ˜ ' 	 0˜ ! 6œ  ˇ 
-	 6 	4  x ¢   µ B  ,) ' h 
- i "   FÛ L Ÿ `  ∫ $[»6 - Ÿ
-© À  VA
-
-πH &ë	 	 S &  	 Z.Sá± } , < ⁄ CL  % ´ »* ë E%	\	ÃZ ] " } ç o+s¯Ä{%ç' e†
-  
-  
-ã }k$]	–  	ñ≥ ÛïŒ9 /
-5& ! -9s éE-;L D
-Q ñ" ∏ï  Ûß* M  ﬂΩ	Æ#   B A	 K¬  ˛
-íR  
-  ò  ,
- Zó   ` |¨m ¬   v  T T §  ¡: ƒ n ! Á r  œ …ïA76 # 'H-
-S  
-;  J µ∫ . < øb.ÃÓ∂-ç™Ï Y± 'ê ∏©ä0ë!◊- > \∆æÀ	8’ _ ∂P ›Óˇü          REDI      DATA     P              å                                      †                         4   Á≠È   soundevents/soundevents_player.vsndevts source2mod_template    $           ___OverrideInputData___ BinaryBlobArg              IsChildResource         3VK|tÈòFØÚÊ>µê7Á       f  =   ‘%  bƒ   -  Û                S     _	   
-0 S     0 ( _   $   ﬂ         0 ﬂ         0 ﬂ         ` 0   ì      , , Û
-       !   "   #   $   % Ñ ”&   '   (   )†0 ì*   +   ,ÏD   ˇ.   /   0   1   2   3   4   5   6à 70 _8   9( _:   ;( n<   = X>X?X>( @P .A ‘ ÓB   C   D   E \ F\  \ ¨ nG   H Ñ I,  H ˇJ   K   L   M   N8 ˜O   P   Q   R   S8 T8 U∏ † V . $WW   X[Y   ZD   ˜
-[   \   ]   ^   _   `   aà bà .c à Wd   el 0 f4 g º %  ˇh   i   j   k   l   m   n   oÄ  ”p   q   r   s <o<t0†ˇu   v   w   x   y   z   {   |   }D  ˚~      Ä   Å   Ç   É   Ñ   Ö   Ü   á‹ àÏﬂâ   ä   ã   å4 Óç   é   è   ê †ëH » í$ †nì   î Ïnï   ñ òóòòòó8 t  .ô ∞Sö   õD `Ûú   ù   û   ü   † \ .ô å˚°   ¢   £   §   •   ¶   ß   ®   ©   ™‘.ô  _´   ¨_≠   Æ( SØ   ∞‡Ã  ‘±@ ≤p.≥ @ S¥   µú@ ˛∂   ∑   ∏   π   ∫   ª   º   Ω ` _æ   ø† (S¿   ¡∏† 1ôd ¬§ (√xô +π? ø ≤	*–ø  @È?43 ”  ‡  „ Î` 8 !Y@ 4@@X  sÏQ∏ÖÎ± ©0 ò   Ÿ †*\è¬ı(?gf Ó ∞ ã
-x  $X #¿r`   …– Û0 P i@ÕÃ $Ï? uÒß∆K7âÈh u%€˘~jºÏ ı ¯ù_î†ø”?⁄,óçŒ9˜?-“ƒ;¿ìÂ?±≤∂)Ê?jC˛ôA¸Ô?@îh…„iœP ıÑ¿ °E∂„?®[vàÿ‘?gQÿE—Â? ÖÎQ∏Â‡ 
-Ä ı@HL2Player.Use type src1_2d volume limiter_on “max mixgroup ?  vsnd_files sounds/common/wpn_select.$  r ^Deny 0 Hdeny4 1 §FallDamage4 p !/d à/fall_014 / .Bullet6 b 8 $ 
-2$ .3.Ä OClaw6 Nclaw| " 2" 3¯ /it,hc_bite{ % 2% Å ™Z_Tentacle ÔAntlion_PoisonZ p Æ_projectilÆ / .2.ì ÚHeadcrab_Reviver_Ranged hlvr_start_multie @evenD  _E¥prics usÆ 	D 2 Prop.Alyx_Radio_G 5setF ¬InterferenceB 2Î eh & 2& ¡E £Zombie_Zapô_rand_min  Vpitch  /axÖ ?zap’ * 2* 3* 4* 5* 6* 7* 8ØTStorm# £eath.Blind oAttackl d.  _b. "_z/ a/ 	v S éAsphyxialK a& B €Teleport.Fail? t Y_fail
-HDash 5_Wi Foley.Body_movem|§‚§default_3d∏~fade_ou!sh ñ& 2& 3œ  ´p‘  M (opI ˚ Sˇ ¬ force_from_D R f8 ,/t8 Û . 2. 3. 4Ë o_short‹ / ‚ 4  34  44 ◊—6 U ˇ_body child_names bG $lo>	Xlloff‘ 'axˇ	 –’  ä_oldestq ooneshoW
-) 2) 3) 4) 5) 6¶7Arm|ß?arm4 •1armπ__leftz  r . OsideK Nrigh†	( ª	( 2( 3( 4( 5( 6( 7d_MantlSm &# !# 3|  Ûow_Traverse Step_5∑Ladder_Singü ı hysics/footstepk ∞metal_thin/ ¥ 8 28 $38 $48 $58 $68 $78 $◊	⁄Wooden_·Øwood_crate·8 28 $38 $48 $58 $68 $78 $88 $9ÕÇrtbeatBahth. >_baL1 21 3≤ 
-?umpL .um3 23 πarRingingLp6iÂr	 ∫ 	 œd_send cleanÑ 
-Rear_ra &_lÍ cHandFX‘_ocute !_CÌ	a bî Khrtfà àhandfx/e3 i* `··0par
-  9om_B§ c6 Qtimerì
- 	/axØ _sparkﬂ 0 20 30 40 50 60 70 80 9ﬁ/_EH 9end?ØGasmask_OnO	g /on6  Re1: 
-r# ¿‚SprintNoPower íB
-)t kentitys Asuit˙_devicn S? ≤ 2 ˇ<_x1 -y1$ 2$ 2$ 3$ 3$ 4$ 4… sØ ≈ `FlashLo¨pitems/f l 15 'ff ªPickupWeapoM aammo_p M ñ		
- ! 
- E _) /      P 9  7 O $  ââ #» ! ≥ X          A P ›Óˇ€          REDI   Ë   DATA   À
-  P              à                                      ò                         0   ùˇ`   soundevents/soundevents_ui.vsndevts source2mod_template    $           ___OverrideInputData___ BinaryBlobArg          IsChildResource 3VK|tÈòFØÚÊ>µê7Á         a   —  bñ   =  Û"                           	   
-      4 ì      @ S   H \  S   `    _     _   \ S   ∏ < $ ^   @ | | ^    !<  " _#   $ _%   &t W'   (< & _)   * _+   , _-   . _/   0ê W1   2  0  _3   4  _5   6  _7   8  _9   :  _;   <   Ï>  _?   @  SA   B¸ C$ D E,DWF   GL WH   Il B$ J$ ^K   Lê	–Md   NÙ˜O   P   Q   R   S   TÿD _U   VD 0WD ,_X   YD ,_Z   [D ,_\   ]D ,_^   _D ,_`   aD ,_b   cD ,Sd   eƒD .P 0 _f   g0 Sh   iT  j0 k® lH _m   nH 0_o   pH 4qH 0_r   sH 0St   uÃH ú4 _v   w| 4xH 0_y   zH 0_{   |_}   ~4 _   Ä4 _Å   Çt4ÉH 0_Ñ   ÖH 0_Ü   áº4àT_â   ä| 0_ã   åH 4çH 0_é   èH 0Sê   ë¥H _í   ì\ D
-hî   ï  "–? *I@ i B @T@öô §…?ÏQ∏ÖÎ±?   43 ” 6	ß "¯ëà Pêï¿gf Ê  ‡ HÄá√@ ∏ i∏ sH¨≈ß òÈ8 /@ 8uˇw‘ 6u3∏Êé˛óŸ  )Ë? 9¿R@   è`9ÔˇcÊ? %( ò  !\sGˇÀ‹ ÿ   x ‡P *ÄV P #©ø ? ¯=Z@PanoUI.Appear type hlvr_default_3d volume mixgroup UI enable_debug_radius  C_max8 Ã_falloff_min  & aspread    Ò4use_hrtf voice_layer ui should_pause vsnd_files sounds/ui/pano_ui_a“ @_01.'  Ë BDisaÎ ^base 7 ¨menu_close; èAffirmLgl  <_lg4 ûRollover 4 r 3 nClick 0  sc2  _c 4 ˛ToggleOption pitch A t% Calogˇ ÔSelectPositiveå ! K 7 ANega7  oubMenuF "uboH 2 oReturn£r ; ÜCraftingÀ8 Ûcombine_machines_c- 'H +K ?disN 
-M L iJ ≠H oDeniedN d5 U ˜DossierUI.Line01N   p_text_l[ 8 28 28 38 38 _Intro≠ 	i! ≥ 
-C 2C 2C 3C … ÔMissionFailure“ 	m* "_f+ ‹ V 2V 2V 3V 3»ÒeditsUI.NamesIn p±!on=0wor( ySde_ou<ƒname_string E 	é cd  _n (_io	} EOut 	 B &ouà°HLVR.Knock Ò HUDQuickInfo.LowHealth src1_2d event_†•limiter_on Zmatch  F
- lentity4 $hi> ˘≥mon/warningß ó ˚Ammo HudChat.Message@ Ctalk—∏≤.DenyWeaponr ës  pnSy^	= 9 ß8 4  m ûMoveSlot = OmoveA ?Ope≤ _hudon8 	CH9 "ff:  ÎRMusic. m ¢/hl2_song7, ¯Instructor.LessonStarrùbeepclear0 üImportant9 #226 Û temBattery.ToucÖ3}•level item9 "/b4 s_pickup?∆4KitJ 1 »smallmedkit1/ CVial0 BWall F
-@ ìmedshotno> - 	‡ 	. 4, ˝LoopingContinueCharge< c > 2Rec1 DSuit .≠ Bsuit ∞ 	2 ≤ 3 /ok3 ™ 0ing¡ : 8  ∑hCrate.Ã- Pammoc \_open0 	ƒ1 )2  Ex#buisherCır.Use SprayCan.Pain· p0 /s eÆZFlare(wP0s/f ¶gun/impact®ı.Materialize Doll.SqueaAÛambient/creatures/teddy{ eêle.Accele— x ∫rpg/rocket13 eIgnite èShotDown@  u4dow)0ort<ÅThumper. S6 ≥ 	"/t+ S_dust¢	`ConsolnBtach˙B_ranO %axzPhysic”2tal î_box_breaf+ -p		 p
-	  	    
->  A
- < A è [
- 7  	 % 3 	 î  A    O ê
- ›Óˇ          REDI   (  DATA0  ≤   P              ê      ¿                              ÿ                         7   ,√»   particles/strider/muzzleflash_strider.vpcf source2mod_template     $           ___OverrideInputData___ BinaryBlobArg                 CompileParticle KV3 Compiler Version           IsChildResource 3VKXÜ(&AO∂ò.] ﬁ∆              ö   b     ì      
-  S   $ Ú!_class CParticleSystemDefinition m_nBehaviorVers controlPointConfigura/ s0 ame preview 	
-	 ›Óˇ

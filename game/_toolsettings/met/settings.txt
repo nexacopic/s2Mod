@@ -1,0 +1,45 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	version = 1
+	ResetToDefaults = false
+	DefaultColorPicker = true
+	AllowOverwriteOfReadOnlyMaterials = false
+	AllowEditingOfUntitledMaterials = false
+	VerboseCompilation = false
+	ShowVariableSortKeys = false
+	ShowFullPathForAssets = false
+	AllowEditingDefaultTextureSettings = false
+	ShowLoadFixupsAsModifications = false
+	DeveloperDebug = false
+	LastChosenOpenMaterialDirectory = ""
+	LastChosenSaveMaterialDirectory = "d:\\github\\s2mod\\content\\addons\\editor_\\editor_\\trol"
+	LastChosenShaderName = "vr_simple"
+	LastChosenTextureDirectory = "D:/GitHub/s2Mod/content/addons/editor_/trol"
+	DefaultShaderName = "vr_simple"
+	ShowDevShaders = false
+	ShowCoreShaders = true
+	ShowShaderAttributes = false
+	LastChosenSurfacePropertiesName = "default"
+	LastChosenExportDirectory = ""
+	ShowRawOutput = false
+	ShowOriginalContents = false
+	ShowCompiledTextures = true
+	TexturePreviewFilteredMagnification = false
+	ExclusiveGroupExpansion = false
+	StateCaptureBufferSize = 0
+	StateCapturePreviewSize = 2
+	ManualStateCapturesOnly = false
+	FeaturesVariablesSplitFactor = 0.4
+	VariablesWindow = 
+	{
+		ActiveTabName = "Variables"
+		TabOrder = null
+	}
+	geometry = "AdnQywABAAAAAAIVAAAAWQAACAAAAAUvAAACHQAAAHgAAAf4AAAFJwAAAAAAAA=="
+	state = "AAAA/wAAAAD9AAAAAgAAAAEAAARQAAADqvwCAAAAAfwAAABIAAADqgAAAG0A/////AEAAAAC+wAAABwATQBFAFQAXwBQAHIAbwBwAGUAcgB0AGkAZQBzAQAAAYwAAAK8AAAANQD////7AAAAFgBNAEUAVABfAFAAcgBlAHYAaQBlAHcBAAAETAAAAZAAAACFAP///wAAAAMAAAXcAAAAofwBAAAAAfsAAAAWAE0ARQBUAF8ASABpAHMAdABvAHIAeQEAAAAAAAAF3AAAAD0A////AAABiAAAA6oAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABwAUAByAGkAbQBhAHIAeQBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA="
+	RecentFiles = 
+	{
+		RecentFile0 = "D:/GitHub/s2Mod/content/addons/editor_/editor_/trol/trol.vmat"
+		RecentFile1 = "D:/GitHub/s2Mod/content/addons/editor_/trol/trol.vmat"
+	}
+}
