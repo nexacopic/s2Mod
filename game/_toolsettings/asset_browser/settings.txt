@@ -1,0 +1,83 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	GlobalAssetBrowserContext = 
+	{
+		browser_geo = "AdnQywABAAAAAANzAAABigAAB5wAAARsAAADewAAAakAAAeUAAAEZAAAAAAAAA=="
+		browser_state = "AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAA4AEEAcwBzAGUAdABCAHIAbwB3AHMAZQByAF8AVwBvAHIAawBpAG4AZwBTAGUAdABzAEQAbwBjAGsAAAAAAP////8AAAEsAP///wAAAAEAAAFeAAACYPwCAAAAAfsAAAAwAEEAcwBzAGUAdABCAHIAbwB3AHMAZQByAF8AUAByAGUAdgBpAGUAdwBEAG8AYwBrAQAAAEgAAAJgAAAArQD///8AAAK4AAACYAAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAABAAAAEABUAG8AbwBsAHMAQgBhAHIBAAAAAP////8AAAAAAAAAAA=="
+		preview_splitter = "AAAA/wAAAAAAAAACAAABigAAAMUAAAAABgEAAAAC"
+		browser_visible = true
+		browser_views = 
+		[
+			{
+				set_name = "All Assets"
+				view_mode_name = "Grid"
+				grid_icon_scale = 1
+				hidden_types = null
+				mod_selection = 
+				{
+					selected_mods = 
+					{
+						addons = true
+						core = true
+						hlvr = true
+						s2 = true
+					}
+				}
+				tag_selection = 
+				{
+					require_all_tags = false
+					include = null
+					exclude = null
+				}
+				List = 
+				{
+					column_0_width = 100
+					column_1_width = 100
+					column_2_width = 100
+					column_3_width = 100
+				}
+				Grid = null
+				active_view = true
+			},
+			{
+				set_name = "Most Recently Used Assets"
+				view_mode_name = "Grid"
+				grid_icon_scale = 1
+				hidden_types = null
+				mod_selection = 
+				{
+					selected_mods = 
+					{
+						addons = true
+						core = true
+						hlvr = true
+						s2 = true
+					}
+				}
+				tag_selection = 
+				{
+					require_all_tags = false
+					include = null
+					exclude = null
+				}
+				List = 
+				{
+					column_0_width = 100
+					column_1_width = 100
+					column_2_width = 100
+					column_3_width = 100
+				}
+				Grid = null
+			},
+		]
+	}
+	"options.m_bShowAllAssets" = false
+	"options.m_bShowRejectedAssets" = true
+	"options.m_bUsePerforceIntegration" = true
+	"Texture Browser" = 
+	{
+		browser_geo = "AdnQywABAAAAAALrAAABXwAABxQAAARBAAAC8wAAAX4AAAcMAAAEOQAAAAAAAA=="
+		browser_state = "AAAA/wAAAAD9AAAAAAAABBoAAAK8AAAABAAAAAQAAAAIAAAACPwAAAAA"
+		browser_visible = true
+	}
+}
